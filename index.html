@@ -1,2296 +1,1344 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+ 
 <!DOCTYPE html>
-<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
-  <head>
-    <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
-    <b:include data='blog' name='all-head-content'/>
-    <title><data:blog.pageTitle/></title>
-
-    <b:skin><![CDATA[/*
+<html class='v2' dir='ltr' lang='en'>
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/2872013778-css_bundle_v2.css' rel='stylesheet' type='text/css'/>
+<meta content='width=1100' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link href='https://dagonchannel.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='https://dagonchannel.blogspot.com/' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Dagon Entertainment Channel - Atom" href="https://dagonchannel.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Dagon Entertainment Channel - RSS" href="https://dagonchannel.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Dagon Entertainment Channel - Atom" href="https://www.blogger.com/feeds/113497483655965805/posts/default" />
+<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+<meta content='https://dagonchannel.blogspot.com/' property='og:url'/>
+<meta content='Dagon Entertainment Channel' property='og:title'/>
+<meta content='Dagon Entertainment Channel | Movies, TV Series and TV Shows' property='og:description'/>
+<title>Dagon Entertainment Channel</title>
+<style id='page-skin-1' type='text/css'><!--
+/*
 -----------------------------------------------
 Blogger Template Style
 Name:     Simple
 Designer: Blogger
 URL:      www.blogger.com
 ----------------------------------------------- */
-
 /* Variable definitions
-   ====================
-   <Variable name="keycolor" description="Main Color" type="color" default="#66bbdd" value="#dd7700"/>
-
-   <Group description="Page Text" selector="body">
-     <Variable name="body.font" description="Font" type="font"
-         default="normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
-     <Variable name="body.text.color" description="Text Color" type="color" default="#222222" value="#cccccc"/>
-   </Group>
-
-   <Group description="Backgrounds" selector=".body-fauxcolumns-outer">
-     <Variable name="body.background.color" description="Outer Background" type="color" default="#66bbdd" value="#292929"/>
-     <Variable name="content.background.color" description="Main Background" type="color" default="#ffffff" value="#333333"/>
-     <Variable name="header.background.color" description="Header Background" type="color" default="transparent" value="transparent"/>
-   </Group>
-
-   <Group description="Links" selector=".main-outer">
-     <Variable name="link.color" description="Link Color" type="color" default="#2288bb" value="#dd7700"/>
-     <Variable name="link.visited.color" description="Visited Color" type="color" default="#888888" value="#cc6600"/>
-     <Variable name="link.hover.color" description="Hover Color" type="color" default="#33aaff" value="#cc6600"/>
-   </Group>
-
-   <Group description="Blog Title" selector=".header h1">
-     <Variable name="header.font" description="Font" type="font"
-         default="normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal bold 57px Cambria"/>
-     <Variable name="header.text.color" description="Title Color" type="color" default="#3399bb"  value="#0F9D58"/>
-   </Group>
-
-   <Group description="Blog Description" selector=".header .description">
-     <Variable name="description.text.color" description="Description Color" type="color"
-         default="#777777"  value="#aaaaaa"/>
-   </Group>
-
-   <Group description="Tabs Text" selector=".tabs-inner .widget li a">
-     <Variable name="tabs.font" description="Font" type="font"
-         default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
-     <Variable name="tabs.text.color" description="Text Color" type="color" default="#999999" value="#999999"/>
-     <Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#000000" value="#ffffff"/>
-   </Group>
-
-   <Group description="Tabs Background" selector=".tabs-outer .PageList">
-     <Variable name="tabs.background.color" description="Background Color" type="color" default="#f5f5f5" value="#222222"/>
-     <Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="#eeeeee" value="#000000"/>
-   </Group>
-
-   <Group description="Post Title" selector="h3.post-title, .comments h4">
-     <Variable name="post.title.font" description="Font" type="font"
-         default="normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
-   </Group>
-
-   <Group description="Date Header" selector=".date-header">
-     <Variable name="date.header.color" description="Text Color" type="color"
-         default="$(body.text.color)" value="#cccccc"/>
-     <Variable name="date.header.background.color" description="Background Color" type="color"
-         default="transparent" value="transparent"/>
-     <Variable name="date.header.font" description="Text Font" type="font"
-         default="normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
-     <Variable name="date.header.padding" description="Date Header Padding" type="string" default="inherit" value="inherit"/>
-     <Variable name="date.header.letterspacing" description="Date Header Letter Spacing" type="string" default="inherit" value="inherit"/>
-     <Variable name="date.header.margin" description="Date Header Margin" type="string" default="inherit" value="inherit"/>
-   </Group>
-
-   <Group description="Post Footer" selector=".post-footer">
-     <Variable name="post.footer.text.color" description="Text Color" type="color" default="#666666" value="#888888"/>
-     <Variable name="post.footer.background.color" description="Background Color" type="color"
-         default="#f9f9f9" value="#303030"/>
-     <Variable name="post.footer.border.color" description="Shadow Color" type="color" default="#eeeeee" value="#444444"/>
-   </Group>
-
-   <Group description="Gadgets" selector="h2">
-     <Variable name="widget.title.font" description="Title Font" type="font"
-         default="normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
-     <Variable name="widget.title.text.color" description="Title Color" type="color" default="#000000" value="#ffffff"/>
-     <Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#999999" value="#999999"/>
-   </Group>
-
-   <Group description="Images" selector=".main-inner">
-     <Variable name="image.background.color" description="Background Color" type="color" default="#ffffff" value="#111111"/>
-     <Variable name="image.border.color" description="Border Color" type="color" default="#eeeeee" value="#111111"/>
-     <Variable name="image.text.color" description="Caption Text Color" type="color" default="$(body.text.color)" value="#cccccc"/>
-   </Group>
-
-   <Group description="Accents" selector=".content-inner">
-     <Variable name="body.rule.color" description="Separator Line Color" type="color" default="#eeeeee" value="#404040"/>
-     <Variable name="tabs.border.color" description="Tabs Border Color" type="color" default="$(body.rule.color)" value="#404040"/>
-   </Group>
-
-   <Variable name="body.background" description="Body Background" type="background"
-       color="$(body.background.color)" default="$(color) none repeat scroll top left" value="$(color) none repeat scroll top left"/>
-   <Variable name="body.background.override" description="Body Background Override" type="string" default="" value=""/>
-
-   <Variable name="body.background.gradient.cap" description="Body Gradient Cap" type="url"
-       default="url(https://resources.blogblog.com/blogblog/data/1kt/simple/gradients_light.png)" value="none"/>
-   <Variable name="body.background.gradient.tile" description="Body Gradient Tile" type="url"
-       default="url(https://resources.blogblog.com/blogblog/data/1kt/simple/body_gradient_tile_light.png)" value="none"/>
-
-   <Variable name="content.background.color.selector" description="Content Background Color Selector" type="string" default=".content-inner" value=".content-inner"/>
-   <Variable name="content.padding" description="Content Padding" type="length" default="10px" min="0" max="100px" value="10px"/>
-   <Variable name="content.padding.horizontal" description="Content Horizontal Padding" type="length" default="$(content.padding)" min="0" max="100px" value="10px"/>
-   <Variable name="content.shadow.spread" description="Content Shadow Spread" type="length" default="40px" min="0" max="100px" value="40px"/>
-   <Variable name="content.shadow.spread.webkit" description="Content Shadow Spread (WebKit)" type="length" default="5px" min="0" max="100px" value="5px"/>
-   <Variable name="content.shadow.spread.ie" description="Content Shadow Spread (IE)" type="length" default="10px" min="0" max="100px" value="10px"/>
-
-   <Variable name="main.border.width" description="Main Border Width" type="length" default="0" min="0" max="10px" value="0"/>
-
-   <Variable name="header.background.gradient" description="Header Gradient" type="url" default="none" value="none"/>
-   <Variable name="header.shadow.offset.left" description="Header Shadow Offset Left" type="length" default="-1px" min="-50px" max="50px" value="-1px"/>
-   <Variable name="header.shadow.offset.top" description="Header Shadow Offset Top" type="length" default="-1px" min="-50px" max="50px" value="-1px"/>
-   <Variable name="header.shadow.spread" description="Header Shadow Spread" type="length" default="1px" min="0" max="100px" value="1px"/>
-   <Variable name="header.padding" description="Header Padding" type="length" default="30px" min="0" max="100px" value="30px"/>
-
-   <Variable name="header.border.size" description="Header Border Size" type="length" default="1px" min="0" max="10px" value="1px"/>
-   <Variable name="header.bottom.border.size" description="Header Bottom Border Size" type="length" default="$(header.border.size)" min="0" max="10px" value="1px"/>
-   <Variable name="header.border.horizontalsize" description="Header Horizontal Border Size" type="length" default="0" min="0" max="10px" value="0"/>
-
-   <Variable name="description.text.size" description="Description Text Size" type="string" default="140%" value="140%"/>
-
-   <Variable name="tabs.margin.top" description="Tabs Margin Top" type="length" default="0" min="0" max="100px" value="0"/>
-   <Variable name="tabs.margin.side" description="Tabs Side Margin" type="length" default="30px" min="0" max="100px" value="30px"/>
-   <Variable name="tabs.background.gradient" description="Tabs Background Gradient" type="url"
-       default="url(https://resources.blogblog.com/blogblog/data/1kt/simple/gradients_light.png)" value="none"/>
-   <Variable name="tabs.border.width" description="Tabs Border Width" type="length" default="1px" min="0" max="10px" value="1px"/>
-   <Variable name="tabs.bevel.border.width" description="Tabs Bevel Border Width" type="length" default="1px" min="0" max="10px" value="0"/>
-
-   <Variable name="post.margin.bottom" description="Post Bottom Margin" type="length" default="25px" min="0" max="100px" value="25px"/>
-
-   <Variable name="image.border.small.size" description="Image Border Small Size" type="length" default="2px" min="0" max="10px" value="0"/>
-   <Variable name="image.border.large.size" description="Image Border Large Size" type="length" default="5px" min="0" max="10px" value="1px"/>
-
-   <Variable name="page.width.selector" description="Page Width Selector" type="string" default=".region-inner" value=".region-inner"/>
-   <Variable name="page.width" description="Page Width" type="string" default="auto" value="auto"/>
-
-   <Variable name="main.section.margin" description="Main Section Margin" type="length" default="15px" min="0" max="100px" value="15px"/>
-   <Variable name="main.padding" description="Main Padding" type="length" default="15px" min="0" max="100px" value="15px"/>
-   <Variable name="main.padding.top" description="Main Padding Top" type="length" default="30px" min="0" max="100px" value="30px"/>
-   <Variable name="main.padding.bottom" description="Main Padding Bottom" type="length" default="30px" min="0" max="100px" value="30px"/>
-
-   <Variable name="paging.background"
-       color="$(content.background.color)"
-       description="Background of blog paging area" type="background"
-       default="transparent none no-repeat scroll top center" value="transparent none no-repeat scroll top center"/>
-
-   <Variable name="footer.bevel" description="Bevel border length of footer" type="length" default="0" min="0" max="10px" value="0"/>
-
-   <Variable name="mobile.background.overlay" description="Mobile Background Overlay" type="string"
-       default="transparent none repeat scroll top left" value="transparent none repeat scroll top left"/>
-   <Variable name="mobile.background.size" description="Mobile Background Size" type="string" default="auto" value="auto"/>
-   <Variable name="mobile.button.color" description="Mobile Button Color" type="color" default="#ffffff"  value="#ffffff"/>
-
-   <Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left"/>
-   <Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right"/>
+====================
+<Variable name="keycolor" description="Main Color" type="color" default="#66bbdd"/>
+<Group description="Page Text" selector="body">
+<Variable name="body.font" description="Font" type="font"
+default="normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="body.text.color" description="Text Color" type="color" default="#222222"/>
+</Group>
+<Group description="Backgrounds" selector=".body-fauxcolumns-outer">
+<Variable name="body.background.color" description="Outer Background" type="color" default="#66bbdd"/>
+<Variable name="content.background.color" description="Main Background" type="color" default="#ffffff"/>
+<Variable name="header.background.color" description="Header Background" type="color" default="transparent"/>
+</Group>
+<Group description="Links" selector=".main-outer">
+<Variable name="link.color" description="Link Color" type="color" default="#2288bb"/>
+<Variable name="link.visited.color" description="Visited Color" type="color" default="#888888"/>
+<Variable name="link.hover.color" description="Hover Color" type="color" default="#33aaff"/>
+</Group>
+<Group description="Blog Title" selector=".header h1">
+<Variable name="header.font" description="Font" type="font"
+default="normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="header.text.color" description="Title Color" type="color" default="#3399bb" />
+</Group>
+<Group description="Blog Description" selector=".header .description">
+<Variable name="description.text.color" description="Description Color" type="color"
+default="#777777" />
+</Group>
+<Group description="Tabs Text" selector=".tabs-inner .widget li a">
+<Variable name="tabs.font" description="Font" type="font"
+default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="tabs.text.color" description="Text Color" type="color" default="#999999"/>
+<Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#000000"/>
+</Group>
+<Group description="Tabs Background" selector=".tabs-outer .PageList">
+<Variable name="tabs.background.color" description="Background Color" type="color" default="#f5f5f5"/>
+<Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="#eeeeee"/>
+</Group>
+<Group description="Post Title" selector="h3.post-title, .comments h4">
+<Variable name="post.title.font" description="Font" type="font"
+default="normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+</Group>
+<Group description="Date Header" selector=".date-header">
+<Variable name="date.header.color" description="Text Color" type="color"
+default="#cccccc"/>
+<Variable name="date.header.background.color" description="Background Color" type="color"
+default="transparent"/>
+<Variable name="date.header.font" description="Text Font" type="font"
+default="normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="date.header.padding" description="Date Header Padding" type="string" default="inherit"/>
+<Variable name="date.header.letterspacing" description="Date Header Letter Spacing" type="string" default="inherit"/>
+<Variable name="date.header.margin" description="Date Header Margin" type="string" default="inherit"/>
+</Group>
+<Group description="Post Footer" selector=".post-footer">
+<Variable name="post.footer.text.color" description="Text Color" type="color" default="#666666"/>
+<Variable name="post.footer.background.color" description="Background Color" type="color"
+default="#f9f9f9"/>
+<Variable name="post.footer.border.color" description="Shadow Color" type="color" default="#eeeeee"/>
+</Group>
+<Group description="Gadgets" selector="h2">
+<Variable name="widget.title.font" description="Title Font" type="font"
+default="normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="widget.title.text.color" description="Title Color" type="color" default="#000000"/>
+<Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#999999"/>
+</Group>
+<Group description="Images" selector=".main-inner">
+<Variable name="image.background.color" description="Background Color" type="color" default="#ffffff"/>
+<Variable name="image.border.color" description="Border Color" type="color" default="#eeeeee"/>
+<Variable name="image.text.color" description="Caption Text Color" type="color" default="#cccccc"/>
+</Group>
+<Group description="Accents" selector=".content-inner">
+<Variable name="body.rule.color" description="Separator Line Color" type="color" default="#eeeeee"/>
+<Variable name="tabs.border.color" description="Tabs Border Color" type="color" default="#404040"/>
+</Group>
+<Variable name="body.background" description="Body Background" type="background"
+color="#292929" default="$(color) none repeat scroll top left"/>
+<Variable name="body.background.override" description="Body Background Override" type="string" default=""/>
+<Variable name="body.background.gradient.cap" description="Body Gradient Cap" type="url"
+default="url(https://resources.blogblog.com/blogblog/data/1kt/simple/gradients_light.png)"/>
+<Variable name="body.background.gradient.tile" description="Body Gradient Tile" type="url"
+default="url(https://resources.blogblog.com/blogblog/data/1kt/simple/body_gradient_tile_light.png)"/>
+<Variable name="content.background.color.selector" description="Content Background Color Selector" type="string" default=".content-inner"/>
+<Variable name="content.padding" description="Content Padding" type="length" default="10px" min="0" max="100px"/>
+<Variable name="content.padding.horizontal" description="Content Horizontal Padding" type="length" default="10px" min="0" max="100px"/>
+<Variable name="content.shadow.spread" description="Content Shadow Spread" type="length" default="40px" min="0" max="100px"/>
+<Variable name="content.shadow.spread.webkit" description="Content Shadow Spread (WebKit)" type="length" default="5px" min="0" max="100px"/>
+<Variable name="content.shadow.spread.ie" description="Content Shadow Spread (IE)" type="length" default="10px" min="0" max="100px"/>
+<Variable name="main.border.width" description="Main Border Width" type="length" default="0" min="0" max="10px"/>
+<Variable name="header.background.gradient" description="Header Gradient" type="url" default="none"/>
+<Variable name="header.shadow.offset.left" description="Header Shadow Offset Left" type="length" default="-1px" min="-50px" max="50px"/>
+<Variable name="header.shadow.offset.top" description="Header Shadow Offset Top" type="length" default="-1px" min="-50px" max="50px"/>
+<Variable name="header.shadow.spread" description="Header Shadow Spread" type="length" default="1px" min="0" max="100px"/>
+<Variable name="header.padding" description="Header Padding" type="length" default="30px" min="0" max="100px"/>
+<Variable name="header.border.size" description="Header Border Size" type="length" default="1px" min="0" max="10px"/>
+<Variable name="header.bottom.border.size" description="Header Bottom Border Size" type="length" default="1px" min="0" max="10px"/>
+<Variable name="header.border.horizontalsize" description="Header Horizontal Border Size" type="length" default="0" min="0" max="10px"/>
+<Variable name="description.text.size" description="Description Text Size" type="string" default="140%"/>
+<Variable name="tabs.margin.top" description="Tabs Margin Top" type="length" default="0" min="0" max="100px"/>
+<Variable name="tabs.margin.side" description="Tabs Side Margin" type="length" default="30px" min="0" max="100px"/>
+<Variable name="tabs.background.gradient" description="Tabs Background Gradient" type="url"
+default="url(https://resources.blogblog.com/blogblog/data/1kt/simple/gradients_light.png)"/>
+<Variable name="tabs.border.width" description="Tabs Border Width" type="length" default="1px" min="0" max="10px"/>
+<Variable name="tabs.bevel.border.width" description="Tabs Bevel Border Width" type="length" default="1px" min="0" max="10px"/>
+<Variable name="post.margin.bottom" description="Post Bottom Margin" type="length" default="25px" min="0" max="100px"/>
+<Variable name="image.border.small.size" description="Image Border Small Size" type="length" default="2px" min="0" max="10px"/>
+<Variable name="image.border.large.size" description="Image Border Large Size" type="length" default="5px" min="0" max="10px"/>
+<Variable name="page.width.selector" description="Page Width Selector" type="string" default=".region-inner"/>
+<Variable name="page.width" description="Page Width" type="string" default="auto"/>
+<Variable name="main.section.margin" description="Main Section Margin" type="length" default="15px" min="0" max="100px"/>
+<Variable name="main.padding" description="Main Padding" type="length" default="15px" min="0" max="100px"/>
+<Variable name="main.padding.top" description="Main Padding Top" type="length" default="30px" min="0" max="100px"/>
+<Variable name="main.padding.bottom" description="Main Padding Bottom" type="length" default="30px" min="0" max="100px"/>
+<Variable name="paging.background"
+color="#333333"
+description="Background of blog paging area" type="background"
+default="transparent none no-repeat scroll top center"/>
+<Variable name="footer.bevel" description="Bevel border length of footer" type="length" default="0" min="0" max="10px"/>
+<Variable name="mobile.background.overlay" description="Mobile Background Overlay" type="string"
+default="transparent none repeat scroll top left"/>
+<Variable name="mobile.background.size" description="Mobile Background Size" type="string" default="auto"/>
+<Variable name="mobile.button.color" description="Mobile Button Color" type="color" default="#ffffff" />
+<Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left"/>
+<Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right"/>
 */
-
 /* Content
 ----------------------------------------------- */
 body {
-  font: $(body.font);
-  color: $(body.text.color);
-  background: $(body.background);
-  padding: 0 $(content.shadow.spread) $(content.shadow.spread) $(content.shadow.spread);
-  $(body.background.override)
+font: normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #cccccc;
+background: #292929 none repeat scroll top left;
+padding: 0 40px 40px 40px;
 }
-
-html body $(page.width.selector) {
-  min-width: 0;
-  max-width: 100%;
-  width: $(page.width);
+html body .region-inner {
+min-width: 0;
+max-width: 100%;
+width: auto;
 }
-
 h2 {
-  font-size: 22px;
+font-size: 22px;
 }
-
 a:link {
-  text-decoration:none;
-  color: $(link.color);
+text-decoration:none;
+color: #dd7700;
 }
-
 a:visited {
-  text-decoration:none;
-  color: $(link.visited.color);
+text-decoration:none;
+color: #cc6600;
 }
-
 a:hover {
-  text-decoration:underline;
-  color: $(link.hover.color);
+text-decoration:underline;
+color: #cc6600;
 }
-
 .body-fauxcolumn-outer .fauxcolumn-inner {
-  background: transparent $(body.background.gradient.tile) repeat scroll top left;
-  _background-image: none;
+background: transparent none repeat scroll top left;
+_background-image: none;
 }
-
 .body-fauxcolumn-outer .cap-top {
-  position: absolute;
-  z-index: 1;
-  height: 400px;
-  width: 100%;
+position: absolute;
+z-index: 1;
+height: 400px;
+width: 100%;
 }
-
 .body-fauxcolumn-outer .cap-top .cap-left {
-  width: 100%;
-  background: transparent $(body.background.gradient.cap) repeat-x scroll top left;
-  _background-image: none;
+width: 100%;
+background: transparent none repeat-x scroll top left;
+_background-image: none;
 }
-
 .content-outer {
-  -moz-box-shadow: 0 0 $(content.shadow.spread) rgba(0, 0, 0, .15);
-  -webkit-box-shadow: 0 0 $(content.shadow.spread.webkit) rgba(0, 0, 0, .15);
-  -goog-ms-box-shadow: 0 0 $(content.shadow.spread.ie) #333333;
-  box-shadow: 0 0 $(content.shadow.spread) rgba(0, 0, 0, .15);
-
-  margin-bottom: 1px;
+-moz-box-shadow: 0 0 40px rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+-goog-ms-box-shadow: 0 0 10px #333333;
+box-shadow: 0 0 40px rgba(0, 0, 0, .15);
+margin-bottom: 1px;
 }
-
 .content-inner {
-  padding: $(content.padding) $(content.padding.horizontal);
+padding: 10px 10px;
 }
-
-$(content.background.color.selector) {
-  background-color: $(content.background.color);
+.content-inner {
+background-color: #333333;
 }
-
 /* Header
 ----------------------------------------------- */
 .header-outer {
-  background: $(header.background.color) $(header.background.gradient) repeat-x scroll 0 -400px;
-  _background-image: none;
+background: rgba(0,0,0,0) none repeat-x scroll 0 -400px;
+_background-image: none;
 }
-
 .Header h1 {
-  font: $(header.font);
-  color: $(header.text.color);
-  text-shadow: $(header.shadow.offset.left) $(header.shadow.offset.top) $(header.shadow.spread) rgba(0, 0, 0, .2);
+font: normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #ffffff;
+text-shadow: -1px -1px 1px rgba(0, 0, 0, .2);
 }
-
 .Header h1 a {
-  color: $(header.text.color);
+color: #ffffff;
 }
-
 .Header .description {
-  font-size: $(description.text.size);
-  color: $(description.text.color);
+font-size: 140%;
+color: #aaaaaa;
 }
-
 .header-inner .Header .titlewrapper {
-  padding: 22px $(header.padding);
+padding: 22px 30px;
 }
-
 .header-inner .Header .descriptionwrapper {
-  padding: 0 $(header.padding);
+padding: 0 30px;
 }
-
 /* Tabs
 ----------------------------------------------- */
 .tabs-inner .section:first-child {
-  border-top: $(header.bottom.border.size) solid $(tabs.border.color);
+border-top: 1px solid #404040;
 }
-
 .tabs-inner .section:first-child ul {
-  margin-top: -$(header.border.size);
-  border-top: $(header.border.size) solid $(tabs.border.color);
-  border-left: $(header.border.horizontalsize) solid $(tabs.border.color);
-  border-right: $(header.border.horizontalsize) solid $(tabs.border.color);
+margin-top: -1px;
+border-top: 1px solid #404040;
+border-left: 0 solid #404040;
+border-right: 0 solid #404040;
 }
-
 .tabs-inner .widget ul {
-  background: $(tabs.background.color) $(tabs.background.gradient) repeat-x scroll 0 -800px;
-  _background-image: none;
-  border-bottom: $(tabs.border.width) solid $(tabs.border.color);
-
-  margin-top: $(tabs.margin.top);
-  margin-left: -$(tabs.margin.side);
-  margin-right: -$(tabs.margin.side);
+background: #222222 none repeat-x scroll 0 -800px;
+_background-image: none;
+border-bottom: 1px solid #404040;
+margin-top: 0;
+margin-left: -30px;
+margin-right: -30px;
 }
-
 .tabs-inner .widget li a {
-  display: inline-block;
-
-  padding: .6em 1em;
-
-  font: $(tabs.font);
-  color: $(tabs.text.color);
-
-  border-$startSide: $(tabs.border.width) solid $(content.background.color);
-  border-$endSide: $(tabs.bevel.border.width) solid $(tabs.border.color);
+display: inline-block;
+padding: .6em 1em;
+font: normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #999999;
+border-left: 1px solid #333333;
+border-right: 0 solid #404040;
 }
-
 .tabs-inner .widget li:first-child a {
-  border-$startSide: none;
+border-left: none;
 }
-
 .tabs-inner .widget li.selected a, .tabs-inner .widget li a:hover {
-  color: $(tabs.selected.text.color);
-  background-color: $(tabs.selected.background.color);
-  text-decoration: none;
+color: #ffffff;
+background-color: #000000;
+text-decoration: none;
 }
-
 /* Columns
 ----------------------------------------------- */
 .main-outer {
-  border-top: $(main.border.width) solid $(body.rule.color);
+border-top: 0 solid #404040;
 }
-
 .fauxcolumn-left-outer .fauxcolumn-inner {
-  border-right: 1px solid $(body.rule.color);
+border-right: 1px solid #404040;
 }
-
 .fauxcolumn-right-outer .fauxcolumn-inner {
-  border-left: 1px solid $(body.rule.color);
+border-left: 1px solid #404040;
 }
-
 /* Headings
 ----------------------------------------------- */
 div.widget > h2,
 div.widget h2.title {
-  margin: 0 0 1em 0;
-
-  font: $(widget.title.font);
-  color: $(widget.title.text.color);
+margin: 0 0 1em 0;
+font: normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #ffffff;
 }
-
 /* Widgets
 ----------------------------------------------- */
 .widget .zippy {
-  color: $(widget.alternate.text.color);
-  text-shadow: 2px 2px 1px rgba(0, 0, 0, .1);
+color: #999999;
+text-shadow: 2px 2px 1px rgba(0, 0, 0, .1);
 }
-
 .widget .popular-posts ul {
-  list-style: none;
+list-style: none;
 }
-
 /* Posts
 ----------------------------------------------- */
 h2.date-header {
-  font: $(date.header.font);
+font: normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
 }
-
 .date-header span {
-  background-color: $(date.header.background.color);
-  color: $(date.header.color);
-  padding: $(date.header.padding);
-  letter-spacing: $(date.header.letterspacing);
-  margin: $(date.header.margin);
+background-color: rgba(0,0,0,0);
+color: #cccccc;
+padding: inherit;
+letter-spacing: inherit;
+margin: inherit;
 }
-
 .main-inner {
-  padding-top: $(main.padding.top);
-  padding-bottom: $(main.padding.bottom);
+padding-top: 30px;
+padding-bottom: 30px;
 }
-
 .main-inner .column-center-inner {
-  padding: 0 $(main.padding);
+padding: 0 15px;
 }
-
 .main-inner .column-center-inner .section {
-  margin: 0 $(main.section.margin);
+margin: 0 15px;
 }
-
 .post {
-  margin: 0 0 $(post.margin.bottom) 0;
+margin: 0 0 25px 0;
 }
-
 h3.post-title, .comments h4 {
-  font: $(post.title.font);
-  margin: .75em 0 0;
+font: normal normal 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+margin: .75em 0 0;
 }
-
 .post-body {
-  font-size: 110%;
-  line-height: 1.4;
-  position: relative;
+font-size: 110%;
+line-height: 1.4;
+position: relative;
 }
-
 .post-body img, .post-body .tr-caption-container, .Profile img, .Image img,
 .BlogList .item-thumbnail img {
-  padding: $(image.border.small.size);
-
-  background: $(image.background.color);
-  border: 1px solid $(image.border.color);
-
-  -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
-  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+padding: 0;
+background: #111111;
+border: 1px solid #111111;
+-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
 }
-
 .post-body img, .post-body .tr-caption-container {
-  padding: $(image.border.large.size);
+padding: 1px;
 }
-
 .post-body .tr-caption-container {
-  color: $(image.text.color);
+color: #cccccc;
 }
-
 .post-body .tr-caption-container img {
-  padding: 0;
-
-  background: transparent;
-  border: none;
-
-  -moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
-  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
-  box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+padding: 0;
+background: transparent;
+border: none;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+box-shadow: 0 0 0 rgba(0, 0, 0, .1);
 }
-
 .post-header {
-  margin: 0 0 1.5em;
-
-  line-height: 1.6;
-  font-size: 90%;
+margin: 0 0 1.5em;
+line-height: 1.6;
+font-size: 90%;
 }
-
 .post-footer {
-  margin: 20px -2px 0;
-  padding: 5px 10px;
-
-  color: $(post.footer.text.color);
-  background-color: $(post.footer.background.color);
-  border-bottom: 1px solid $(post.footer.border.color);
-
-  line-height: 1.6;
-  font-size: 90%;
+margin: 20px -2px 0;
+padding: 5px 10px;
+color: #888888;
+background-color: #303030;
+border-bottom: 1px solid #444444;
+line-height: 1.6;
+font-size: 90%;
 }
-
 #comments .comment-author {
-  padding-top: 1.5em;
-
-  border-top: 1px solid $(body.rule.color);
-  background-position: 0 1.5em;
+padding-top: 1.5em;
+border-top: 1px solid #404040;
+background-position: 0 1.5em;
 }
-
 #comments .comment-author:first-child {
-  padding-top: 0;
-  border-top: none;
+padding-top: 0;
+border-top: none;
 }
-
 .avatar-image-container {
-  margin: .2em 0 0;
+margin: .2em 0 0;
 }
-
 #comments .avatar-image-container img {
-  border: 1px solid $(image.border.color);
+border: 1px solid #111111;
 }
-
 /* Comments
 ----------------------------------------------- */
 .comments .comments-content .icon.blog-author {
-  background-repeat: no-repeat;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
 }
-
 .comments .comments-content .loadmore a {
-  border-top: 1px solid $(widget.alternate.text.color);
-  border-bottom: 1px solid $(widget.alternate.text.color);
+border-top: 1px solid #999999;
+border-bottom: 1px solid #999999;
 }
-
 .comments .comment-thread.inline-thread {
-  background-color: $(post.footer.background.color);
+background-color: #303030;
 }
-
 .comments .continue {
-  border-top: 2px solid $(widget.alternate.text.color);
+border-top: 2px solid #999999;
 }
-
 /* Accents
 ---------------------------------------------- */
 .section-columns td.columns-cell {
-  border-$startSide: 1px solid $(body.rule.color);
+border-left: 1px solid #404040;
 }
-
 .blog-pager {
-  background: $(paging.background);
+background: transparent none no-repeat scroll top center;
 }
-
 .blog-pager-older-link, .home-link,
 .blog-pager-newer-link {
-  background-color: $(content.background.color);
-  padding: 5px;
+background-color: #333333;
+padding: 5px;
 }
-
 .footer-outer {
-  border-top: $(footer.bevel) dashed #bbbbbb;
+border-top: 0 dashed #bbbbbb;
 }
-
 /* Mobile
 ----------------------------------------------- */
 body.mobile  {
-  background-size: $(mobile.background.size);
+background-size: auto;
 }
-
 .mobile .body-fauxcolumn-outer {
-  background: $(mobile.background.overlay);
+background: transparent none repeat scroll top left;
 }
-
 .mobile .body-fauxcolumn-outer .cap-top {
-  background-size: 100% auto;
+background-size: 100% auto;
 }
-
 .mobile .content-outer {
-  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
-  box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .15);
+box-shadow: 0 0 3px rgba(0, 0, 0, .15);
 }
-
 .mobile .tabs-inner .widget ul {
-  margin-left: 0;
-  margin-right: 0;
+margin-left: 0;
+margin-right: 0;
 }
-
 .mobile .post {
-  margin: 0;
+margin: 0;
 }
-
 .mobile .main-inner .column-center-inner .section {
-  margin: 0;
+margin: 0;
 }
-
 .mobile .date-header span {
-  padding: 0.1em 10px;
-  margin: 0 -10px;
+padding: 0.1em 10px;
+margin: 0 -10px;
 }
-
 .mobile h3.post-title {
-  margin: 0;
+margin: 0;
 }
-
 .mobile .blog-pager {
-  background: transparent none no-repeat scroll top center;
+background: transparent none no-repeat scroll top center;
 }
-
 .mobile .footer-outer {
-  border-top: none;
+border-top: none;
 }
-
 .mobile .main-inner, .mobile .footer-inner {
-  background-color: $(content.background.color);
+background-color: #333333;
 }
-
 .mobile-index-contents {
-  color: $(body.text.color);
+color: #cccccc;
 }
-
 .mobile-link-button {
-  background-color: $(link.color);
+background-color: #dd7700;
 }
-
 .mobile-link-button a:link, .mobile-link-button a:visited {
-  color: $(mobile.button.color);
+color: #ffffff;
 }
-
 .mobile .tabs-inner .section:first-child {
-  border-top: none;
+border-top: none;
 }
-
 .mobile .tabs-inner .PageList .widget-content {
-  background-color: $(tabs.selected.background.color);
-  color: $(tabs.selected.text.color);
-  border-top: $(tabs.border.width) solid $(tabs.border.color);
-  border-bottom: $(tabs.border.width) solid $(tabs.border.color);
+background-color: #000000;
+color: #ffffff;
+border-top: 1px solid #404040;
+border-bottom: 1px solid #404040;
 }
-
 .mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
-  border-$startSide: 1px solid $(tabs.border.color);
+border-left: 1px solid #404040;
 }
-]]></b:skin>
 
-    <b:template-skin>
-      <b:variable default='960px' name='content.width' type='length' value='1077px'/>
-      <b:variable default='0' name='main.column.left.width' type='length' value='170px'/>
-      <b:variable default='310px' name='main.column.right.width' type='length' value='237px'/>
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+body {
+min-width: 1111px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 1111px;
+max-width: 1111px;
+_width: 1111px;
+}
+.main-inner .columns {
+padding-left: 0px;
+padding-right: 0px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0px;
+right: 0px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0px") -
+parseInt("0px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 0px;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 0px;
+}
+.main-inner .column-left-outer {
+width: 0px;
+right: 100%;
+margin-left: -0px;
+}
+.main-inner .column-right-outer {
+width: 0px;
+margin-right: -0px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+body#layout div.add_widget {
+padding: 8px;
+}
+body#layout div.add_widget a {
+margin-left: 32px;
+}
+--></style>
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=113497483655965805&amp;zx=f27f10dc-f487-4a7b-a624-a11d08e04432' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=113497483655965805&amp;zx=f27f10dc-f487-4a7b-a624-a11d08e04432' rel='stylesheet'/></noscript>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
 
-      <![CDATA[
-      body {
-        min-width: $(content.width);
-      }
+</head>
+<body class='loading'>
+<div class='navbar no-items section' id='navbar' name='Navbar'>
+</div>
+<div itemscope='itemscope' itemtype='http://schema.org/Blog' style='display: none;'>
+<meta content='Dagon Entertainment Channel' itemprop='name'/>
+</div>
+<div class='body-fauxcolumns'>
+<div class='fauxcolumn-outer body-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content'>
+<div class='content-fauxcolumns'>
+<div class='fauxcolumn-outer content-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content-outer'>
+<div class='content-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left content-fauxborder-left'>
+<div class='fauxborder-right content-fauxborder-right'></div>
+<div class='content-inner'>
+<header>
+<div class='header-outer'>
+<div class='header-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left header-fauxborder-left'>
+<div class='fauxborder-right header-fauxborder-right'></div>
+<div class='region-inner header-inner'>
+<div class='header section' id='header' name='Header'><div class='widget Header' data-version='1' id='Header1'>
+<div id='header-inner'>
+<a href='https://dagonchannel.blogspot.com/' style='display: block'>
+<img alt='Dagon Entertainment Channel' height='163px; ' id='Header1_headerimg' src='https://blogger.googleusercontent.com/img/a/AVvXsEjT7vr4yHrlkCwDGte4X0yL0fihz4VlDhUsElefEmIsOo40r_EC3ahVyrBb_ksIDG2Di1PEvulJ5fRGT0rFTxNnTg_e7TMiPNQvI68xOZwGdU_yTGkl0zCpjRBuIq-na3RTd5xCbCvgNpMx1aDTw8gj57t5XXtYIAK7UMs7KBRXIiM89Bp4WCPWwnaWII95=s1091' style='display: block' width='1091px; '/>
+</a>
+</div>
+</div></div>
+</div>
+</div>
+<div class='header-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</header>
+<div class='tabs-outer'>
+<div class='tabs-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left tabs-fauxborder-left'>
+<div class='fauxborder-right tabs-fauxborder-right'></div>
+<div class='region-inner tabs-inner'>
+<div class='tabs section' id='crosscol' name='Cross-Column'><div class='widget PageList' data-version='1' id='PageList1'>
+<h2>Pages</h2>
+<div class='widget-content'>
+<ul>
+<li>
+<a href='https://dagonchannel.blogspot.com/p/myanmar.html'>မ&#4156;န&#4154;မ&#4140;&#4151;ရ&#4143;ပ&#4154;ရ&#4158;င&#4154;🎬</a>
+</li>
+<li>
+<a href='https://dagonchannel.blogspot.com/p/english.html'>ဟ&#4145;&#4140;လ&#4141;ဝ&#4143;ဒ&#4154; &#10024;</a>
+</li>
+<li>
+<a href='https://dagonchannel.blogspot.com/p/asian.html'>အ&#4140;ရ&#4158;ရ&#4143;ပ&#4154;ရ&#4158;င&#4154;🌴</a>
+</li>
+<li>
+<a href='https://dagonchannel.blogspot.com/p/indian.html'>အ&#4141;န&#4153;ဒ&#4141;ယရ&#4143;ပ&#4154;ရ&#4158;င&#4154;&#10024;</a>
+</li>
+<li>
+<a href='https://dagonchannel.blogspot.com/p/world.html'>ကမ&#4153;ဘ&#4140;&#4151;ရ&#4143;ပ&#4154;ရ&#4158;င&#4154;မ&#4155;&#4140;&#4152;🌍</a>
+</li>
+<li>
+<a href='https://dagonchannel.blogspot.com/p/animation.html'>က&#4140;တ&#4157;န&#4154;&#4152;က&#4140;&#4152;🏯 </a>
+</li>
+<li>
+<a href='https://dagonchannel.blogspot.com/p/documentary.html'>မ&#4158;တ&#4154;တမ&#4154;&#4152;ရ&#4143;ပ&#4154;ရ&#4158;င&#4154;🧭</a>
+</li>
+<li>
+<a href='https://dagonchannel.blogspot.com/p/comedy.html'>ဟ&#4140;သမ&#4155;&#4140;&#4152;🤠</a>
+</li>
+<li>
+<a href='https://dagonchannel.blogspot.com/p/tv-drama.html'>TV စ&#4142;&#4152;ရ&#4142;&#4152;မ&#4155;&#4140;&#4152;👑 </a>
+</li>
+</ul>
+<div class='clear'></div>
+</div>
+</div></div>
+<div class='tabs no-items section' id='crosscol-overflow' name='Cross-Column 2'></div>
+</div>
+</div>
+<div class='tabs-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='main-outer'>
+<div class='main-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left main-fauxborder-left'>
+<div class='fauxborder-right main-fauxborder-right'></div>
+<div class='region-inner main-inner'>
+<div class='columns fauxcolumns'>
+<div class='fauxcolumn-outer fauxcolumn-center-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-left-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-right-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class='columns-inner'>
+<div class='column-center-outer'>
+<div class='column-center-inner'>
+<div class='main section' id='main' name='Main'><div class='widget Blog' data-version='1' id='Blog1'>
+<div class='blog-posts hfeed'>
 
-      .content-outer, .content-fauxcolumn-outer, .region-inner {
-        min-width: $(content.width);
-        max-width: $(content.width);
-        _width: $(content.width);
-      }
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>Monday, July 13, 2026</span></h2>
 
-      .main-inner .columns {
-        padding-left: $(main.column.left.width);
-        padding-right: $(main.column.right.width);
-      }
-
-      .main-inner .fauxcolumn-center-outer {
-        left: $(main.column.left.width);
-        right: $(main.column.right.width);
-        /* IE6 does not respect left and right together */
-        _width: expression(this.parentNode.offsetWidth -
-            parseInt("$(main.column.left.width)") -
-            parseInt("$(main.column.right.width)") + 'px');
-      }
-
-      .main-inner .fauxcolumn-left-outer {
-        width: $(main.column.left.width);
-      }
-
-      .main-inner .fauxcolumn-right-outer {
-        width: $(main.column.right.width);
-      }
-
-      .main-inner .column-left-outer {
-        width: $(main.column.left.width);
-        right: 100%;
-        margin-left: -$(main.column.left.width);
-      }
-
-      .main-inner .column-right-outer {
-        width: $(main.column.right.width);
-        margin-right: -$(main.column.right.width);
-      }
-
-      #layout {
-        min-width: 0;
-      }
-
-      #layout .content-outer {
-        min-width: 0;
-        width: 800px;
-      }
-
-      #layout .region-inner {
-        min-width: 0;
-        width: auto;
-      }
-
-      body#layout div.add_widget {
-        padding: 8px;
-      }
-
-      body#layout div.add_widget a {
-        margin-left: 32px;
-      }
-      ]]>
-    </b:template-skin>
-
-    <b:if cond='data:skin.vars.body_background.image.isResizable'>
-      <b:include cond='not data:view.isPreview' data='{                          image: data:skin.vars.body_background.image,                          selector: &quot;body&quot;                        }' name='responsiveImageStyle'/>
-    </b:if>
-
-    <b:include data='blog' name='google-analytics'/>
-  </head>
-
-  <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
-  <b:section class='navbar' id='navbar' maxwidgets='1' name='Navbar' showaddelement='no'>
-    <b:widget id='Navbar1' locked='true' title='Navbar' type='Navbar'>
-      <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
-    function setAttributeOnload(object, attribute, val) {
-      if(window.addEventListener) {
-        window.addEventListener(&#39;load&#39;,
-          function(){ object[attribute] = val; }, false);
-      } else {
-        window.attachEvent(&#39;onload&#39;, function(){ object[attribute] = val; });
-      }
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='113497483655965805' itemprop='blogId'/>
+<meta content='1570574576889077391' itemprop='postId'/>
+<a name='1570574576889077391'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+<a href='https://dagonchannel.blogspot.com/2026/07/view-media-guide.html'>VIEW MEDIA GUIDE</a>
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-1570574576889077391' itemprop='description articleBody'>
+<html>
+<style>
+      
+      
+      .mkv-guide-container {
+        max-width: 750px;
+        margin: 20px auto;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: #022903;
+        color: #f0dada;
+        line-height: 1.6;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        border: 1px solid #eaeaea;
     }
-  &lt;/script&gt;
-&lt;div id=&quot;navbar-iframe-container&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;https://apis.google.com/js/platform.js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-      gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
-        if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
-          gapi.iframes.getContext().openChild({
-              url: &#39;https://www.blogger.com/navbar/1412505531940530342?origin\x3dhttp://localhost:80&#39;,
-              where: document.getElementById(&quot;navbar-iframe-container&quot;),
-              id: &quot;navbar-iframe&quot;
-          });
-        }
-      });
-    &lt;/script&gt;&lt;script type=&quot;text/javascript&quot;&gt;
-(function() {
-var script = document.createElement(&#39;script&#39;);
-script.type = &#39;text/javascript&#39;;
-script.src = &#39;//pagead2.googlesyndication.com/pagead/js/google_top_exp.js&#39;;
-var head = document.getElementsByTagName(&#39;head&#39;)[0];
-if (head) {
-head.appendChild(script);
-}})();
-&lt;/script&gt;
-</b:includable>
-    </b:widget>
-  </b:section>
+    .mkv-guide-container h3 {
+        color: #ff8800; /* VLC Orange Theme */
+        border-bottom: 2px solid #fff3e0;
+        padding-bottom: 10px;
+        margin-top: 0;
+        font-size: 1.4em;
+    }
+    .mkv-guide-container .lang-section {
+        margin-bottom: 35px;
+    }
+    .mkv-guide-container .lang-section:last-child {
+        margin-bottom: 0;
+    }
+    .mkv-guide-container p.intro {
+        font-size: 1.05em;
+        margin-bottom: 20px;
+        color: #444;
+    }
+    .mkv-guide-container ol {
+        margin-left: 10px;
+        padding-left: 20px;
+    }
+    .mkv-guide-container li {
+        margin-bottom: 12px;
+        padding-left: 5px;
+    }
+    .mkv-guide-container b {
+        color: #f0dada;
+        font-weight: 600;
+    }
+    .mkv-guide-container code {
+        background-color: black;
+        padding: 4px 8px;
+        border-radius: 6px;
+        font-family: "Courier New", Courier, monospace;
+        color: #d83b01;
+        font-size: 0.9em;
+        border: 1px solid #ddd;
+    }
+    .mkv-guide-container i {
+        color: #f0dada;
+        font-size: 0.95em;
+    }
+    .mkv-guide-container a {
+        color:#f0dada;
+        text-decoration: none;
+    }
+    .mkv-guide-container a:hover {
+        text-decoration: underline;
+    }
+    /* Divider between languages */
+    .mkv-divider {
+        height: 1px;
+        background-color: #eaeaea;
+        margin: 30px 0;
+        border: none;
+    }
+      
+</style>
 
-  <b:if cond='data:blog.pageType == &quot;index&quot;'>
-    <div itemscope='itemscope' itemtype='http://schema.org/Blog' style='display: none;'>
-      <meta expr:content='data:blog.title' itemprop='name'/>
-      <b:if cond='data:blog.metaDescription'>
-        <meta expr:content='data:blog.metaDescription' itemprop='description'/>
-      </b:if>
+<body>
+  
+  
+  
+  
+ <div class="mkv-guide-container">
+    
+   <!-- Burmese Section -->
+    <div class="lang-section">
+      <span style="color: #04ff00;"><h3>MKV ဗ&#4142;ဒ&#4142;ယ&#4141;&#4143;ဖ&#4141;&#4143;င&#4154;မ&#4155;&#4140;&#4152;က&#4141;&#4143; က&#4156;ည&#4151;&#4154;ရ&#4158;&#4143;နည&#4154;&#4152;</h3></span>  
+        
+        <p class="intro">
+      
+          
+          <h4>ဤ<span style="font-weight: normal;">Website တ&#4157;င&#4154;</span><span style="font-weight: 400;">တခ&#4155;&#4141;&#4143;&#4151;ဖ&#4141;&#4143;င&#4154;မ&#4155;&#4140;&#4152;သည&#4154; <span style="color: #04ff00;">MP4 မဟ&#4143;တ&#4154;ပ&#4146; MKV အမ&#4155;&#4141;&#4143;&#4152;အစ&#4140;&#4152;ဖ&#4141;&#4143;င&#4154;မ&#4155;&#4140;&#4152;</span>ဖ&#4156;စ&#4154;သ&#4145;&#4140;က&#4156;&#4145;&#4140;င&#4151;&#4154;&nbsp;</span></h4><br>Computer [Desktop/Laptop] ရ&#4158;&#4141; Browser မ&#4155;&#4140;&#4152;တ&#4157;င&#4154; တ&#4141;&#4143;က&#4154;ရ&#4141;&#4143;က&#4154;က&#4156;ည&#4151;&#4154;ရ&#4158;&#4143;&#4173; မရန&#4141;&#4143;င&#4154;ဘ&#4146; Download ဆ&#4157;&#4146;မ&#4158;သ&#4140;က&#4156;ည&#4151;&#4154;ရ&#4158;&#4143;န&#4141;&#4143;င&#4154;ပ&#4139;လ&#4141;မ&#4151;&#4154;မည&#4154;&#4171;&nbsp;<div><b><span style="color: #04ff00;">ဒ&#4145;&#4139;င&#4154;&#4152;စရ&#4140;မလ&#4141;&#4143;ဘ&#4146; တ&#4141;&#4143;က&#4154;ရ&#4141;&#4143;က&#4154;က&#4156;ည&#4151;&#4154;ရ&#4158;&#4143;ရန&#4154;</span></b> အတ&#4157;က&#4154;က&#4141;&#4143; <span style="color: #04ff00;">VLC Media Player က&#4141;&#4143; အသ&#4143;&#4150;&#4152;ပ&#4156;&#4143;&#8204;ပ&#4139; -</span>  
+           
+        
+        <ol>
+            <li>ဘရ&#4145;&#4140;က&#4154;ဇ&#4140;မ&#4158;ဗ&#4142;ဒ&#4142;ယ&#4141;&#4143;လင&#4151;&#4154;ခ&#4154; [(Cop link address) From (VIEW MEDIA)] က&#4141;&#4143; Right Click ဖ&#4156;င&#4151;&#4154; <b>Copy</b> က&#4144;&#4152;ယ&#4144;ပ&#4139;&#4171;</li>
+            <li>သင&#4151;&#4154;က&#4157;န&#4154;ပ&#4155;&#4144;တ&#4140;တ&#4157;င&#4154; <b>VLC Media Player</b> က&#4141;&#4143; ဖ&#4157;င&#4151;&#4154;ပ&#4139;&#4171; <i>(VLC မရ&#4158;&#4141;သ&#4145;&#4152;ပ&#4139;က <a href="https://www.videolan.org" target="_blank">videolan.org</a> တ&#4157;င&#4154; အခမ&#4146;&#4151; ဒ&#4145;&#4139;င&#4154;&#4152;လ&#4143;ဒ&#4154;ရယ&#4144;န&#4141;&#4143;င&#4154;ပ&#4139;သည&#4154;)</i></li>
+            <li>ဘယ&#4154;ဘက&#4154;အပ&#4145;&#4139;&#4154;ထ&#4145;&#4140;င&#4151;&#4154;ရ&#4158;&#4141; <b>Media</b> က&#4141;&#4143;န&#4158;&#4141;ပ&#4154;ပ&#4156;&#4142;&#4152; <b>Open Network Stream...</b> က&#4141;&#4143; ရ&#4157;&#4145;&#4152;ခ&#4155;ယ&#4154;ပ&#4139; (သ&#4141;&#4143;&#4151;မဟ&#4143;တ&#4154; <code>Ctrl + N</code> က&#4141;&#4143;န&#4158;&#4141;ပ&#4154;ပ&#4139;)&#4171;</li>
+            <li>က&#4144;&#4152;ယ&#4144;ထ&#4140;&#4152;သ&#4145;&#4140; လင&#4151;&#4154;ခ&#4154;က&#4141;&#4143; ထည&#4151;&#4154;သ&#4157;င&#4154;&#4152; (Paste ခ&#4155;) ပ&#4156;&#4142;&#4152; <b>Play</b> က&#4141;&#4143; န&#4158;&#4141;ပ&#4154;ပ&#4139;&#4171;</li>
+        </ol>
     </div>
-  </b:if>
+<br>
+ 
 
-  <div class='body-fauxcolumns'>
-    <div class='fauxcolumn-outer body-fauxcolumn-outer'>
-    <div class='cap-top'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
+    <!-- English Section -->
+    <div class="lang-section">
+        <h3>How to Play The Video (MKV File)</h3>
+        <br> 
+       
+          
+For the MKV files, it may not play directly in your web browser and might trigger a download instead. To stream it instantly without downloading, please use VLC Media Player: 
+         <p class="intro">
+         
+          <ol>   <li><b>Copy</b> the media link from your browser.</li>
+            <li>Open <b>VLC Media Player</b> on your computer. <i>(If you don't have it, download it free from <a href="https://www.videolan.org" target="_blank">videolan.org</a>)</i></li>
+            <li>Click on <b>Media</b> at the top left menu, then select <b>Open Network Stream...</b> or press <code>Ctrl + N</code></li>
+            <li><b>Paste</b> the link into the URL box and click <b>Play</b>.</li>
+        </ol> 
     </div>
-    <div class='fauxborder-left'>
-    <div class='fauxborder-right'/>
-    <div class='fauxcolumn-inner'>
-    </div>
-    </div>
-    <div class='cap-bottom'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    </div>
-  </div>
+</div>
+</div>
 
-  <div class='content'>
-  <div class='content-fauxcolumns'>
-    <div class='fauxcolumn-outer content-fauxcolumn-outer'>
-    <div class='cap-top'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    <div class='fauxborder-left'>
-    <div class='fauxborder-right'/>
-    <div class='fauxcolumn-inner'>
-    </div>
-    </div>
-    <div class='cap-bottom'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    </div>
-  </div>
+  
+</body>
+</html>
+      
+      
+      
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+<span class='post-author vcard'>
+</span>
+<span class='post-timestamp'>
+-
+<meta content='https://dagonchannel.blogspot.com/2026/07/view-media-guide.html' itemprop='url'/>
+<a class='timestamp-link' href='https://dagonchannel.blogspot.com/2026/07/view-media-guide.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2026-07-13T10:43:00+07:00'>July 13, 2026</abbr></a>
+</span>
+<span class='post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-849198325'>
+<a href='https://www.blogger.com/post-edit.g?blogID=113497483655965805&postID=1570574576889077391&from=pencil' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='https://resources.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='https://www.blogger.com/share-post.g?blogID=113497483655965805&postID=1570574576889077391&target=email' target='_blank' title='Email This'><span class='share-button-link-text'>Email This</span></a><a class='goog-inline-block share-button sb-blog' href='https://www.blogger.com/share-post.g?blogID=113497483655965805&postID=1570574576889077391&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='https://www.blogger.com/share-post.g?blogID=113497483655965805&postID=1570574576889077391&target=twitter' target='_blank' title='Share to X'><span class='share-button-link-text'>Share to X</span></a><a class='goog-inline-block share-button sb-facebook' href='https://www.blogger.com/share-post.g?blogID=113497483655965805&postID=1570574576889077391&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Share to Facebook'><span class='share-button-link-text'>Share to Facebook</span></a><a class='goog-inline-block share-button sb-pinterest' href='https://www.blogger.com/share-post.g?blogID=113497483655965805&postID=1570574576889077391&target=pinterest' target='_blank' title='Share to Pinterest'><span class='share-button-link-text'>Share to Pinterest</span></a>
+</div>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'>
+<span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class='inline-ad'>
+</div>
 
-  <div class='content-outer'>
-  <div class='content-cap-top cap-top'>
-    <div class='cap-left'/>
-    <div class='cap-right'/>
-  </div>
-  <div class='fauxborder-left content-fauxborder-left'>
-  <div class='fauxborder-right content-fauxborder-right'/>
-  <div class='content-inner'>
-
-    <header>
-    <div class='header-outer'>
-    <div class='header-cap-top cap-top'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    <div class='fauxborder-left header-fauxborder-left'>
-    <div class='fauxborder-right header-fauxborder-right'/>
-    <div class='region-inner header-inner'>
-      <b:section class='header' id='header' maxwidgets='1' name='Header' showaddelement='no'>
-        <b:widget id='Header1' locked='true' title='Worldwide Myanmar   (Header)' type='Header'>
-          <b:widget-settings>
-            <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEhiVFDojUFnkZacAKpK19lhmvcDH6uhtOOLL0LpXlwxSAd_y0P84VqthLPf1ipQyxDJMx_6fwAk3X3smN7u46JsorVVn-FlgJ3zq3tgaOWHhqGhEuWf2wNW9kbxJfoT4HY0LUylUNnp1XT6qyKJlAsOCdwNFixRc_XY6UcrXEi3Q5VynwlCZ2hfO21ezbY=s1057</b:widget-setting>
-            <b:widget-setting name='displayHeight'>156</b:widget-setting>
-            <b:widget-setting name='sectionWidth'>1057</b:widget-setting>
-            <b:widget-setting name='useImage'>true</b:widget-setting>
-            <b:widget-setting name='shrinkToFit'>true</b:widget-setting>
-            <b:widget-setting name='imagePlacement'>REPLACE</b:widget-setting>
-            <b:widget-setting name='displayWidth'>1057</b:widget-setting>
-          </b:widget-settings>
-          <b:includable id='main'>
-
-  <b:if cond='data:useImage'>
-    <b:if cond='data:imagePlacement == &quot;BEHIND&quot;'>
-      <!--
-      Show image as background to text. You can't really calculate the width
-      reliably in JS because margins are not taken into account by any of
-      clientWidth, offsetWidth or scrollWidth, so we don't force a minimum
-      width if the user is using shrink to fit.
-      This results in a margin-width's worth of pixels being cropped. If the
-      user is not using shrink to fit then we expand the header.
-      -->
-      <b:if cond='data:mobile'>
-        <div id='header-inner'>
-          <div class='titlewrapper' style='background: transparent'>
-            <h1 class='title' style='background: transparent; border-width: 0px'>
-              <b:include name='title'/>
-            </h1>
-          </div>
-          <b:include name='description'/>
-        </div>
-      <b:else/>
-        <div expr:style='&quot;background-image: url(\&quot;&quot; + data:sourceUrl + &quot;\&quot;); &quot;                      + &quot;background-position: &quot;                      + data:backgroundPositionStyleStr + &quot;; &quot;                      + data:widthStyleStr                      + &quot;min-height: &quot; + data:height                      + &quot;_height: &quot; + data:height                      + &quot;background-repeat: no-repeat; &quot;' id='header-inner'>
-          <div class='titlewrapper' style='background: transparent'>
-            <h1 class='title' style='background: transparent; border-width: 0px'>
-              <b:include name='title'/>
-            </h1>
-          </div>
-          <b:include name='description'/>
-        </div>
-      </b:if>
-    <b:else/>
-      <!--Show the image only-->
-      <div id='header-inner'>
-        <a expr:href='data:blog.homepageUrl' style='display: block'>
-          <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_headerimg&quot;' expr:src='data:sourceUrl' expr:width='data:width' style='display: block'/>
+        </div></div>
+      
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='https://dagonchannel.blogspot.com/search?updated-max=2026-07-13T10:43:00%2B07:00&amp;max-results=1' id='Blog1_blog-pager-older-link' title='Older Posts'>Older Posts</a>
+</span>
+<a class='home-link' href='https://dagonchannel.blogspot.com/'>Home</a>
+</div>
+<div class='clear'></div>
+<div class='blog-feeds'>
+<div class='feed-links'>
+Subscribe to:
+<a class='feed-link' href='https://dagonchannel.blogspot.com/feeds/posts/default' target='_blank' type='application/atom+xml'>Posts (Atom)</a>
+</div>
+</div>
+</div><div class='widget HTML' data-version='1' id='HTML1'>
+<div class='widget-content'>
+<!-- DAGON CHANNEL CROSS-PLATFORM NAV -->
+<nav class="dc-desktop-nav">
+    <div class="dc-nav-container">
+        
+        <!-- Logo Brand -->
+        <a href="https://dagonchannel.blogspot.com/" class="dc-brand-logo">
+            WELCOME<span class="dc-brand-badge">HOME</span>
         </a>
-        <!--Show the description-->
-        <b:if cond='data:imagePlacement == &quot;BEFORE_DESCRIPTION&quot;'>
-          <b:include name='description'/>
-        </b:if>
-      </div>
-    </b:if>
-  <b:else/>
-    <!--No header image -->
-    <div id='header-inner'>
-      <div class='titlewrapper'>
-        <h1 class='title'>
-          <b:include name='title'/>
-        </h1>
-      </div>
-      <b:include name='description'/>
-    </div>
-  </b:if>
-</b:includable>
-          <b:includable id='description'>
-  <div class='descriptionwrapper'>
-    <p class='description'><span><data:description/></span></p>
-  </div>
-</b:includable>
-          <b:includable id='title'>
-  <b:tag cond='data:blog.url != data:blog.homepageUrl' expr:href='data:blog.homepageUrl' name='a'>
-    <data:title/>
-  </b:tag>
-</b:includable>
-        </b:widget>
-      </b:section>
-    </div>
-    </div>
-    <div class='header-cap-bottom cap-bottom'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    </div>
-    </header>
 
-    <div class='tabs-outer'>
-    <div class='tabs-cap-top cap-top'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    <div class='fauxborder-left tabs-fauxborder-left'>
-    <div class='fauxborder-right tabs-fauxborder-right'/>
-    <div class='region-inner tabs-inner'>
-      <b:section class='tabs' id='crosscol' maxwidgets='1' name='Cross-Column' showaddelement='yes'>
-        <b:widget id='PageList1' locked='false' title='' type='PageList'>
-          <b:widget-settings>
-            <b:widget-setting name='pageListJson'><![CDATA[{"501098452234670045":{"href":"https://worldwidemyanmaragency.blogspot.com/p/blog-page_10.html","position":4,"title":"Library စာကြည့်တိုက် "},"3607966600536548154":{"href":"https://worldwidemyanmaragency.blogspot.com/p/blog-page.html","position":2,"title":"အိမ်ခြံမြေဥပဒေများ"},"3691357099747410898":{"href":"https://worldwidemyanmaragency.blogspot.com/p/real-estate-laws-in-myanmar-burma.html","position":3,"title":"Real Estate Laws"},"1535179124038283359":{"href":"https://worldwidemyanmaragency.blogspot.com/p/latest-movies.html","position":6,"title":"Movies Download"},"6566869254578295342":{"href":"https://worldwidemyanmaragency.blogspot.com/p/our-service.html","position":1,"title":"Rent or Sale | အိမ်ခြံမြေကြော်ငြာများ "},"8601819682023222488":{"href":"https://worldwidemyanmaragency.blogspot.com/p/infotainment.html","position":5,"title":"ENTERTAINMENT"},"311734807341366294":{"href":"https://worldwidemyanmaragency.blogspot.com/p/about-us.html","position":0,"title":"Home"}}]]></b:widget-setting>
-            <b:widget-setting name='homeTitle'>Home</b:widget-setting>
-          </b:widget-settings>
-          <b:includable id='main'>
-  <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
-  <div class='widget-content'>
-    <b:if cond='data:mobile'>
-      <select expr:id='data:widget.instanceId + &quot;_select&quot;'>
-        <b:if cond='data:showPlaceholder'>
-          <option disabled='disabled' hidden='hidden' value=''>
-            <b:attr cond='!data:hasCurrentPage' name='selected' value='selected'/>
-            <b:message name='messages.moveToPage'/>
-          </option>
-        </b:if>
-        <b:loop values='data:links' var='link'>
-          <option expr:value='data:link.href'>
-            <b:attr cond='data:link.isCurrentPage' name='selected' value='selected'/>
-            <data:link.title/>
-          </option>
-        </b:loop>
-      </select>
-      <span class='pagelist-arrow'>&amp;#9660;</span>
-    <b:else/>
-      <ul>
-        <b:loop values='data:links' var='link'>
-          <li>
-            <b:class cond='data:link.isCurrentPage' name='selected'/>
-            <a expr:href='data:link.href'><data:link.title/></a>
-          </li>
-        </b:loop>
-      </ul>
-    </b:if>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-        </b:widget>
-      </b:section>
-      <b:section class='tabs' id='crosscol-overflow' name='Cross-Column 2' showaddelement='no'/>
-    </div>
-    </div>
-    <div class='tabs-cap-bottom cap-bottom'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    </div>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="dc-mobile-toggle" onclick="dcToggleMobileLinks(event)">
+            <span class="dc-bar"></span>
+            <span class="dc-bar"></span>
+            <span class="dc-bar"></span>
+        </button>
 
-    <div class='main-outer'>
-    <div class='main-cap-top cap-top'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-
-    <div class='fauxborder-left main-fauxborder-left'>
-    <div class='fauxborder-right main-fauxborder-right'/>
-    <div class='region-inner main-inner'>
-
-      <div class='columns fauxcolumns'>
-
-        <div class='fauxcolumn-outer fauxcolumn-center-outer'>
-        <div class='cap-top'>
-          <div class='cap-left'/>
-          <div class='cap-right'/>
-        </div>
-        <div class='fauxborder-left'>
-        <div class='fauxborder-right'/>
-        <div class='fauxcolumn-inner'>
-        </div>
-        </div>
-        <div class='cap-bottom'>
-          <div class='cap-left'/>
-          <div class='cap-right'/>
-        </div>
-        </div>
-
-        <div class='fauxcolumn-outer fauxcolumn-left-outer'>
-        <div class='cap-top'>
-          <div class='cap-left'/>
-          <div class='cap-right'/>
-        </div>
-        <div class='fauxborder-left'>
-        <div class='fauxborder-right'/>
-        <div class='fauxcolumn-inner'>
-        </div>
-        </div>
-        <div class='cap-bottom'>
-          <div class='cap-left'/>
-          <div class='cap-right'/>
-        </div>
-        </div>
-
-        <div class='fauxcolumn-outer fauxcolumn-right-outer'>
-        <div class='cap-top'>
-          <div class='cap-left'/>
-          <div class='cap-right'/>
-        </div>
-        <div class='fauxborder-left'>
-        <div class='fauxborder-right'/>
-        <div class='fauxcolumn-inner'>
-        </div>
-        </div>
-        <div class='cap-bottom'>
-          <div class='cap-left'/>
-          <div class='cap-right'/>
-        </div>
-        </div>
-
-        <!-- corrects IE6 width calculation -->
-        <div class='columns-inner'>
-
-        <div class='column-center-outer'>
-        <div class='column-center-inner'>
-          <b:section class='main' id='main' name='Main' showaddelement='no'>
-            <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'>
-              <b:widget-settings>
-                <b:widget-setting name='showDateHeader'>true</b:widget-setting>
-                <b:widget-setting name='style.textcolor'>#ffffff</b:widget-setting>
-                <b:widget-setting name='showShareButtons'>true</b:widget-setting>
-                <b:widget-setting name='authorLabel'>By</b:widget-setting>
-                <b:widget-setting name='showCommentLink'>true</b:widget-setting>
-                <b:widget-setting name='style.urlcolor'>#ffffff</b:widget-setting>
-                <b:widget-setting name='showAuthor'>false</b:widget-setting>
-                <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
-                <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
-                <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-                <b:widget-setting name='reactionsLabel'/>
-                <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
-                <b:widget-setting name='style.layout'>1x1</b:widget-setting>
-                <b:widget-setting name='showLabels'>true</b:widget-setting>
-                <b:widget-setting name='showLocation'>true</b:widget-setting>
-                <b:widget-setting name='showTimestamp'>true</b:widget-setting>
-                <b:widget-setting name='postsPerAd'>3</b:widget-setting>
-                <b:widget-setting name='showBacklinks'>false</b:widget-setting>
-                <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
-                <b:widget-setting name='showInlineAds'>true</b:widget-setting>
-                <b:widget-setting name='showReactions'>false</b:widget-setting>
-              </b:widget-settings>
-              <b:includable id='main' var='top'>
-  <b:if cond='!data:mobile'>
-    <!-- posts -->
-    <div class='blog-posts hfeed'>
-
-      <b:include data='top' name='status-message'/>
-
-      <b:loop values='data:posts' var='post'>
-        <b:if cond='data:post.isDateStart and not data:post.isFirstPost'>
-          &lt;/div&gt;&lt;/div&gt;
-        </b:if>
-        <b:if cond='data:post.isDateStart'>
-          &lt;div class=&quot;date-outer&quot;&gt;
-        </b:if>
-        <b:if cond='data:post.dateHeader'>
-          <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
-        </b:if>
-        <b:if cond='data:post.isDateStart'>
-          &lt;div class=&quot;date-posts&quot;&gt;
-        </b:if>
-        <div class='post-outer'>
-          <b:include data='post' name='post'/>
-          <b:include cond='data:blog.pageType in {&quot;static_page&quot;,&quot;item&quot;}' data='post' name='comment_picker'/>
-        </div>
-
-        <!-- Ad -->
-        <b:if cond='data:post.includeAd'>
-          <div class='inline-ad'>
-            <data:adCode/>
-          </div>
-        </b:if>
-      </b:loop>
-      <b:if cond='data:numPosts != 0'>
-        &lt;/div&gt;&lt;/div&gt;
-      </b:if>
-    </div>
-
-    <!-- navigation -->
-    <b:include name='nextprev'/>
-
-    <!-- feed links -->
-    <b:include name='feedLinks'/>
-
-  <b:else/>
-    <b:include name='mobile-main'/>
-  </b:if>
-</b:includable>
-              <b:includable id='backlinkDeleteIcon' var='backlink'/>
-              <b:includable id='backlinks' var='post'/>
-              <b:includable id='comment-form' var='post'>
-  <div class='comment-form'>
-    <a name='comment-form'/>
-    <b:if cond='data:mobile'>
-      <h4 id='comment-post-message'>
-        <a expr:id='data:widget.instanceId + &quot;_comment-editor-toggle-link&quot;' href='javascript:void(0)'><data:postCommentMsg/></a></h4>
-      <p><data:blogCommentMessage/></p>
-      <data:blogTeamBlogMessage/>
-      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
-      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' style='display: none' width='100%'/>
-    <b:else/>
-      <h4 id='comment-post-message'><data:postCommentMsg/></h4>
-      <p><data:blogCommentMessage/></p>
-      <data:blogTeamBlogMessage/>
-      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
-      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
-    </b:if>
-    <data:post.cmtfpIframe/>
-    <script type='text/javascript'>
-      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
-    </script>
-  </div>
-</b:includable>
-              <b:includable id='commentDeleteIcon' var='comment'>
-  <span expr:class='&quot;item-control &quot; + data:comment.adminClass'>
-    <b:if cond='data:showCmtPopup'>
-      <div class='goog-toggle-button'>
-        <div class='goog-inline-block comment-action-icon'/>
-      </div>
-    <b:else/>
-      <a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:top.deleteCommentMsg'>
-        <img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
-      </a>
-    </b:if>
-  </span>
-</b:includable>
-              <b:includable id='comment_count_picker' var='post'>
-  <a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'>
-    <data:post.commentLabelFull/>:
-  </a>
-</b:includable>
-              <b:includable id='comment_picker' var='post'>
-  <b:if cond='data:post.showThreadedComments'>
-    <b:include data='post' name='threaded_comments'/>
-  <b:else/>
-    <b:include data='post' name='comments'/>
-  </b:if>
-</b:includable>
-              <b:includable id='comments' var='post'>
-  <div class='comments' id='comments'>
-    <a name='comments'/>
-    <b:if cond='data:post.allowComments'>
-      <h4><data:post.commentLabelFull/>:</h4>
-
-      <b:if cond='data:post.commentPagingRequired'>
-        <span class='paging-control-container'>
-          <b:if cond='data:post.hasOlderLinks'>
-            <a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'><data:post.oldestLinkText/></a>
-              &#160;
-            <a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'><data:post.olderLinkText/></a>
-              &#160;
-          </b:if>
-
-          <data:post.commentRangeText/>
-
-          <b:if cond='data:post.hasNewerLinks'>
-            &#160;
-            <a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'><data:post.newerLinkText/></a>
-            &#160;
-            <a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'><data:post.newestLinkText/></a>
-          </b:if>
-        </span>
-      </b:if>
-
-      <div expr:id='data:widget.instanceId + &quot;_comments-block-wrapper&quot;'>
-        <dl expr:class='data:post.avatarIndentClass' id='comments-block'>
-          <b:loop values='data:post.comments' var='comment'>
-            <dt expr:class='&quot;comment-author &quot; + data:comment.authorClass' expr:id='data:comment.anchorName'>
-              <b:if cond='data:comment.favicon'>
-                <img expr:src='data:comment.favicon' height='16px' style='margin-bottom:-2px;' width='16px'/>
-              </b:if>
-              <a expr:name='data:comment.anchorName'/>
-              <b:if cond='data:blog.enabledCommentProfileImages'>
-                <data:comment.authorAvatarImage/>
-              </b:if>
-              <b:if cond='data:comment.authorUrl'>
-                <a expr:href='data:comment.authorUrl' rel='nofollow'><data:comment.author/></a>
-              <b:else/>
-                <data:comment.author/>
-              </b:if>
-              <data:commentPostedByMsg/>
-            </dt>
-            <dd class='comment-body' expr:id='data:widget.instanceId + data:comment.cmtBodyIdPostfix'>
-              <b:if cond='data:comment.isDeleted'>
-                <span class='deleted-comment'><data:comment.body/></span>
-              <b:else/>
-                <p>
-                  <data:comment.body/>
-                </p>
-              </b:if>
-            </dd>
-            <dd class='comment-footer'>
-              <span class='comment-timestamp'>
-                <a expr:href='data:comment.url' title='comment permalink'>
-                  <data:comment.timestamp/>
+        <!-- Menu Navigation Grid Area -->
+        <div class="dc-menu-grid" id="dc-menu-links-wrapper">
+            
+            <!-- Item 1: Main Menu Hub -->
+            <div class="dc-menu-item">
+                <a href="javascript:void(0);" class="dc-menu-btn" onclick="dcToggleDesktopDrop(event, 'drop-top')">
+                    📁 Main Stream <span class="dc-btn-arrow">&#9660;</span>
                 </a>
-                <b:include data='comment' name='commentDeleteIcon'/>
-              </span>
-            </dd>
-          </b:loop>
-        </dl>
-      </div>
-
-      <b:if cond='data:post.commentPagingRequired'>
-        <span class='paging-control-container'>
-          <a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'>
-            <data:post.oldestLinkText/>
-          </a>
-          <a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'>
-            <data:post.olderLinkText/>
-          </a>
-          &#160;
-          <data:post.commentRangeText/>
-          &#160;
-          <a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'>
-            <data:post.newerLinkText/>
-          </a>
-          <a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'>
-            <data:post.newestLinkText/>
-          </a>
-        </span>
-      </b:if>
-
-      <p class='comment-footer'>
-        <b:if cond='data:post.embedCommentForm'>
-          <b:if cond='data:post.allowNewComments'>
-            <b:include data='post' name='comment-form'/>
-          <b:else/>
-            <data:post.noNewCommentsText/>
-          </b:if>
-        <b:elseif cond='data:post.allowComments'/>
-          <a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><data:postCommentMsg/></a>
-        </b:if>
-      </p>
-    </b:if>
-    <b:if cond='data:showCmtPopup'>
-      <div id='comment-popup'>
-        <iframe allowtransparency='true' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
-        </iframe>
-      </div>
-    </b:if>
-
-  </div>
-</b:includable>
-              <b:includable id='feedLinks'>
-  <b:if cond='data:blog.pageType != &quot;item&quot;'> <!-- Blog feed links -->
-    <b:if cond='data:feedLinks'>
-      <div class='blog-feeds'>
-        <b:include data='feedLinks' name='feedLinksBody'/>
-      </div>
-    </b:if>
-
-  <b:else/> <!--Post feed links -->
-    <div class='post-feeds'>
-      <b:loop values='data:posts' var='post'>
-        <b:include cond='data:post.allowComments and data:post.feedLinks' data='post.feedLinks' name='feedLinksBody'/>
-      </b:loop>
-    </div>
-  </b:if>
-</b:includable>
-              <b:includable id='feedLinksBody' var='links'>
-  <div class='feed-links'>
-  <data:feedLinksMsg/>
-  <b:loop values='data:links' var='f'>
-     <a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'><data:f.name/> (<data:f.feedType/>)</a>
-  </b:loop>
-  </div>
-</b:includable>
-              <b:includable id='iframe_comments' var='post'>
-  <!-- G+ comments, no longer available. The includable is retained for backwards-compatibility. -->
-</b:includable>
-              <b:includable id='mobile-index-post' var='post'>
-  <div class='mobile-date-outer date-outer'>
-    <b:if cond='data:post.dateHeader'>
-      <div class='date-header'>
-        <span><data:post.dateHeader/></span>
-      </div>
-    </b:if>
-
-    <div class='mobile-post-outer'>
-      <a expr:href='data:post.url'>
-        <h3 class='mobile-index-title entry-title' itemprop='name'>
-          <data:post.title/>
-        </h3>
-
-        <div class='mobile-index-arrow'>&amp;rsaquo;</div>
-
-        <div class='mobile-index-contents'>
-          <b:if cond='data:post.thumbnailUrl'>
-            <div class='mobile-index-thumbnail'>
-              <div class='Image'>
-                <img expr:src='data:post.thumbnailUrl'/>
-              </div>
-            </div>
-          </b:if>
-
-          <div class='post-body'>
-            <b:if cond='data:post.snippet'><data:post.snippet/></b:if>
-          </div>
-        </div>
-
-        <div style='clear: both;'/>
-      </a>
-
-      <div class='mobile-index-comment'>
-        <b:include cond='data:blog.pageType != &quot;static_page&quot;                          and data:post.allowComments                          and data:post.numComments != 0' data='post' name='comment_count_picker'/>
-      </div>
-    </div>
-  </div>
-</b:includable>
-              <b:includable id='mobile-main' var='top'>
-    <!-- posts -->
-    <div class='blog-posts hfeed'>
-
-      <b:include data='top' name='status-message'/>
-
-      <b:if cond='data:blog.pageType == &quot;index&quot;'>
-        <b:loop values='data:posts' var='post'>
-          <b:include data='post' name='mobile-index-post'/>
-        </b:loop>
-      <b:else/>
-        <b:loop values='data:posts' var='post'>
-          <b:include data='post' name='mobile-post'/>
-        </b:loop>
-      </b:if>
-    </div>
-
-   <b:include name='mobile-nextprev'/>
-</b:includable>
-              <b:includable id='mobile-nextprev'>
-  <div class='blog-pager' id='blog-pager'>
-    <b:if cond='data:newerPageUrl'>
-      <div class='mobile-link-button' id='blog-pager-newer-link'>
-      <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'>&amp;lsaquo;</a>
-      </div>
-    </b:if>
-
-    <b:if cond='data:olderPageUrl'>
-      <div class='mobile-link-button' id='blog-pager-older-link'>
-      <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'>&amp;rsaquo;</a>
-      </div>
-    </b:if>
-
-    <div class='mobile-link-button' id='blog-pager-home-link'>
-    <a class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></a>
-    </div>
-
-    <div class='mobile-desktop-link'>
-      <a class='home-link' expr:href='data:desktopLinkUrl'><data:desktopLinkMsg/></a>
-    </div>
-
-  </div>
-  <div class='clear'/>
-</b:includable>
-              <b:includable id='mobile-post' var='post'>
-  <div class='date-outer'>
-    <b:if cond='data:post.dateHeader'>
-      <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
-    </b:if>
-    <div class='date-posts'>
-      <div class='post-outer'>
-
-        <div class='post hentry uncustomized-post-template' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
-          <b:if cond='data:post.thumbnailUrl'>
-            <meta expr:content='data:post.thumbnailUrl' itemprop='image_url'/>
-          </b:if>
-          <meta expr:content='data:blog.blogId' itemprop='blogId'/>
-          <meta expr:content='data:post.id' itemprop='postId'/>
-
-          <a expr:name='data:post.id'/>
-          <b:if cond='data:post.title'>
-            <h3 class='post-title entry-title' itemprop='name'>
-              <b:if cond='data:post.link'>
-                <a expr:href='data:post.link'><data:post.title/></a>
-              <b:elseif cond='data:post.url and data:blog.url != data:post.url'/>
-                <a expr:href='data:post.url'><data:post.title/></a>
-              <b:else/>
-                <data:post.title/>
-              </b:if>
-            </h3>
-          </b:if>
-
-          <div class='post-header'>
-            <div class='post-header-line-1'/>
-          </div>
-
-          <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
-            <data:post.body/>
-            <div style='clear: both;'/> <!-- clear for photos floats -->
-          </div>
-
-          <div class='post-footer'>
-            <div class='post-footer-line post-footer-line-1'>
-              <span class='post-author vcard'>
-                <b:if cond='data:top.showAuthor'>
-                  <b:if cond='data:post.authorProfileUrl'>
-                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
-                      <meta expr:content='data:post.authorProfileUrl' itemprop='url'/>
-                      <a expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
-                        <span itemprop='name'><data:post.author/></span>
-                      </a>
-                    </span>
-                  <b:else/>
-                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
-                      <span itemprop='name'><data:post.author/></span>
-                    </span>
-                  </b:if>
-                </b:if>
-              </span>
-
-              <span class='post-timestamp'>
-                <b:if cond='data:top.showTimestamp'>
-                  <data:top.timestampLabel/>
-                  <b:if cond='data:post.url'>
-                    <meta expr:content='data:post.url.canonical' itemprop='url'/>
-                    <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><abbr class='published' expr:title='data:post.timestampISO8601' itemprop='datePublished'><data:post.timestamp/></abbr></a>
-                  </b:if>
-                </b:if>
-              </span>
-
-              <span class='post-comment-link'>
-                <b:include cond='data:blog.pageType not in {&quot;item&quot;,&quot;static_page&quot;}                                  and data:post.allowComments' data='post' name='comment_count_picker'/>
-              </span>
-            </div>
-
-            <div class='post-footer-line post-footer-line-2'>
-              <b:if cond='data:top.showMobileShare'>
-                <div class='mobile-link-button goog-inline-block' id='mobile-share-button'>
-                  <a href='javascript:void(0);'><data:shareMsg/></a>
+                <div class="dc-expansion-box" id="drop-top">
+                    <a href="/search/label/New-Movies">🔥 Best Movies | New Releases</a>
+                    <a href="/search/label/New-Series">🧭 Best Series | New Releases</a>
+                    <a href="/search/label/International-Series">🌐 International TV Series</a> 
+                    <a href="/search/label/K-Drama">🇰🇷 Korea - Korean Dramas</a> 
+                    <a href="/search/label/Myanmar-Series">🎬 Myanmar TV Series</a>
                 </div>
-              </b:if>
             </div>
 
-          </div>
-        </div>
-
-        <b:include cond='data:blog.pageType in {&quot;static_page&quot;,&quot;item&quot;}' data='post' name='comment_picker'/>
-      </div>
-    </div>
-  </div>
-</b:includable>
-              <b:includable id='nextprev'>
-  <div class='blog-pager' id='blog-pager'>
-    <b:if cond='data:newerPageUrl'>
-      <span id='blog-pager-newer-link'>
-      <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'><data:newerPageTitle/></a>
-      </span>
-    </b:if>
-
-    <b:if cond='data:olderPageUrl'>
-      <span id='blog-pager-older-link'>
-      <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'><data:olderPageTitle/></a>
-      </span>
-    </b:if>
-
-    <a class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></a>
-
-    <b:if cond='data:mobileLinkUrl'>
-      <div class='blog-mobile-link'>
-        <a expr:href='data:mobileLinkUrl'><data:mobileLinkMsg/></a>
-      </div>
-    </b:if>
-
-  </div>
-  <div class='clear'/>
-</b:includable>
-              <b:includable id='post' var='post'>
-  <div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
-    <b:if cond='data:post.firstImageUrl'>
-      <meta expr:content='data:post.firstImageUrl' itemprop='image_url'/>
-    </b:if>
-    <meta expr:content='data:blog.blogId' itemprop='blogId'/>
-    <meta expr:content='data:post.id' itemprop='postId'/>
-
-    <a expr:name='data:post.id'/>
-    <b:if cond='data:post.title'>
-      <h3 class='post-title entry-title' itemprop='name'>
-      <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
-        <a expr:href='data:post.link ? data:post.link : data:post.url'><data:post.title/></a>
-      <b:else/>
-        <data:post.title/>
-      </b:if>
-      </h3>
-    </b:if>
-
-    <div class='post-header'>
-    <div class='post-header-line-1'/>
-    </div>
-
-    <!-- Then use the post body as the schema.org description, for good G+/FB snippeting. -->
-    <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' expr:itemprop='(data:blog.metaDescription ? &quot;&quot; : &quot;description &quot;) + &quot;articleBody&quot;'>
-      <data:post.body/>
-      <div style='clear: both;'/> <!-- clear for photos floats -->
-    </div>
-
-    <b:if cond='data:post.hasJumpLink'>
-      <div class='jump-link'>
-        <a expr:href='data:post.url + &quot;#more&quot;' expr:title='data:post.title'><data:post.jumpText/></a>
-      </div>
-    </b:if>
-
-    <div class='post-footer'>
-    <div class='post-footer-line post-footer-line-1'>
-      <span class='post-author vcard'>
-        <b:if cond='data:top.showAuthor'>
-          <data:top.authorLabel/>
-            <b:if cond='data:post.authorProfileUrl'>
-              <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
-                <meta expr:content='data:post.authorProfileUrl' itemprop='url'/>
-                <a class='g-profile' expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
-                  <span itemprop='name'><data:post.author/></span>
+            <!-- Item 2: Genre Hub -->
+            <div class="dc-menu-item">
+                <a href="javascript:void(0);" class="dc-menu-btn" onclick="dcToggleDesktopDrop(event, 'drop-genre')">
+                    🍿 Genre <span class="dc-btn-arrow">&#9660;</span>
                 </a>
-              </span>
-            <b:else/>
-              <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
-                <span itemprop='name'><data:post.author/></span>
-              </span>
-            </b:if>
-        </b:if>
-      </span>
+                <div class="dc-expansion-box" id="drop-genre">
+                    <a href="/search/label/Action">🚀 Action Movies</a>
+                    <a href="/search/label/Animation">🧸 Animation</a>
+                    <a href="/search/label/Comedy">😂 Comedy</a>
+                    <a href="/search/label/Horror">👻 Horror</a>
+                </div>
+            </div>
 
-      <span class='post-timestamp'>
-        <b:if cond='data:top.showTimestamp'>
-          <data:top.timestampLabel/>
-          <b:if cond='data:post.url'>
-            <meta expr:content='data:post.url.canonical' itemprop='url'/>
-            <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><abbr class='published' expr:title='data:post.timestampISO8601' itemprop='datePublished'><data:post.timestamp/></abbr></a>
-          </b:if>
-        </b:if>
-      </span>
+            <!-- Item 3: Country Directory -->
+            <div class="dc-menu-item">
+                <a href="javascript:void(0);" class="dc-menu-btn" onclick="dcToggleDesktopDrop(event, 'drop-country')">
+                    🌍 Country <span class="dc-btn-arrow">&#9660;</span>
+                </a>
+                <div class="dc-expansion-box" id="drop-country">
+                    <a href="/search/label/Myanmar">🇲🇲 Myanmar Films</a>
+                    <a href="https://dagonchannel.blogspot.com/p/hollywood-movies.html">🇺🇸 Hollywood</a>
+                    <a href="https://dagonchannel.blogspot.com/p/korean-films.html">🇰🇷 Korean Cinema</a>
+                </div>
+            </div>
 
-      <span class='post-comment-link'>
-        <b:include cond='data:blog.pageType not in {&quot;item&quot;,&quot;static_page&quot;}                          and data:post.allowComments' data='post' name='comment_count_picker'/>
-      </span>
+            <!-- Item 4: Live Broadcasts & Media -->
+            <div class="dc-menu-item">
+                <a href="javascript:void(0);" class="dc-menu-btn" onclick="dcToggleDesktopDrop(event, 'drop-On-Air')">
+                    📡 On Air <span class="dc-btn-arrow">&#9660;</span>
+                </a>
+                <div class="dc-expansion-box" id="drop-On-Air">
+                    <a href="/search/label/Myanmar-TV">🌍 Global TV Channels</a> 
+                    <a href="/search/label/Dagon-Live">🔥 Live Streams</a> 
+                    <a href="/search/label/Music-Videos">🎵 Music Videos & Concerts</a> 
+                    <a href="/search/label/Short-Films">🎬 Short Films & Micro Series</a> 
+                    <a href="/search/label/TalkShow">💬 Talk Shows & Interviews</a> 
+                    <a href="/search/label/Podcast">🎙&#65039; Podcasts</a> 
+                    <a href="/search/label/Web-Movies">🌐 Web Movies</a> 
+                </div>
+            </div>
 
-      <span class='post-icons'>
-        <!-- email post links -->
-        <b:if cond='data:post.emailPostUrl'>
-          <span class='item-action'>
-          <a expr:href='data:post.emailPostUrl' expr:title='data:top.emailPostMsg'>
-            <img alt='' class='icon-action' height='13' src='https://resources.blogblog.com/img/icon18_email.gif' width='18'/>
-          </a>
-          </span>
-        </b:if>
+            <!-- Item 5: DMCA Standalone Button -->
+            <div class="dc-menu-item">
+                <a href="https://dagonchannel.blogspot.com/p/dmca_02063264659.html" class="dc-menu-btn">&#9878;&#65039; DMCA</a>
+            </div>
 
-        <!-- quickedit pencil -->
-        <b:include data='post' name='postQuickEdit'/>
-      </span>
-
-      <!-- share buttons -->
-      <div class='post-share-buttons goog-inline-block'>
-        <b:include cond='data:post.sharePostUrl' data='post' name='shareButtons'/>
-      </div>
-
-      </div>
-
-      <div class='post-footer-line post-footer-line-2'>
-      <span class='post-labels'>
-        <b:if cond='data:top.showPostLabels and data:post.labels'>
-          <data:postLabelsLabel/>
-          <b:loop values='data:post.labels' var='label'>
-            <a expr:href='data:label.url' rel='tag'><data:label.name/></a><b:if cond='not data:label.isLast'>,</b:if>
-          </b:loop>
-        </b:if>
-      </span>
-      </div>
-
-      <div class='post-footer-line post-footer-line-3'>
-      <span class='post-location'>
-        <b:if cond='data:top.showLocation and data:post.location'>
-          <data:postLocationLabel/>
-          <a expr:href='data:post.location.mapsUrl' target='_blank'><data:post.location.name/></a>
-        </b:if>
-      </span>
-      </div>
-      <b:if cond='data:post.authorAboutMe'>
-        <div class='author-profile' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
-          <b:if cond='data:post.authorPhoto.url'>
-            <img expr:src='data:post.authorPhoto.url' itemprop='image' width='50px'/>
-          </b:if>
-          <div>
-            <a class='g-profile' expr:href='data:post.authorProfileUrl' itemprop='url' rel='author' title='author profile'>
-              <span itemprop='name'><data:post.author/></span>
-            </a>
-          </div>
-          <span itemprop='description'><data:post.authorAboutMe/></span>
+            <!-- Item 6: Standalone Request Button -->
+            <div class="dc-menu-item">
+                <a href="/p/request.html" class="dc-menu-btn dc-accent-btn">&#9993;&#65039; Request</a>
+            </div>
+            
         </div>
-      </b:if>
     </div>
-  </div>
-</b:includable>
-              <b:includable id='postQuickEdit' var='post'>
-  <b:if cond='data:post.editUrl'>
-    <span expr:class='&quot;item-control &quot; + data:post.adminClass'>
-      <a expr:href='data:post.editUrl' expr:title='data:top.editPostMsg'>
-        <img alt='' class='icon-action' height='18' src='https://resources.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
-      </a>
-    </span>
-  </b:if>
-</b:includable>
-              <b:includable id='shareButtons' var='post'>
-  <b:if cond='data:top.showEmailButton'><a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'><span class='share-button-link-text'><data:top.emailThisMsg/></span></a></b:if><b:if cond='data:top.showBlogThisButton'><a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &quot;&amp;target=blog&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' expr:title='data:top.blogThisMsg' target='_blank'><span class='share-button-link-text'><data:top.blogThisMsg/></span></a></b:if><b:if cond='data:top.showTwitterButton'><a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToTwitterMsg/></span></a></b:if><b:if cond='data:top.showFacebookButton'><a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToFacebookMsg/></span></a></b:if><b:if cond='data:top.showPinterestButton'><a class='goog-inline-block share-button sb-pinterest' expr:href='data:post.sharePostUrl + &quot;&amp;target=pinterest&quot;' expr:title='data:top.shareToPinterestMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToPinterestMsg/></span></a></b:if>
-</b:includable>
-              <b:includable id='status-message'>
-  <b:if cond='data:navMessage'>
-  <div class='status-msg-wrap'>
-    <div class='status-msg-body'>
-      <data:navMessage/>
-    </div>
-    <div class='status-msg-border'>
-      <div class='status-msg-bg'>
-        <div class='status-msg-hidden'><data:navMessage/></div>
-      </div>
-    </div>
-  </div>
-  <div style='clear: both;'/>
-  </b:if>
-</b:includable>
-              <b:includable id='threaded-comment-form' var='post'>
-  <div class='comment-form'>
-    <a name='comment-form'/>
-    <b:if cond='data:mobile'>
-      <p><data:blogCommentMessage/></p>
-      <data:blogTeamBlogMessage/>
-      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
-      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' style='display: none' width='100%'/>
-    <b:else/>
-      <p><data:blogCommentMessage/></p>
-      <data:blogTeamBlogMessage/>
-      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
-      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
-    </b:if>
-    <data:post.cmtfpIframe/>
-    <script type='text/javascript'>
-      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
-    </script>
-  </div>
-</b:includable>
-              <b:includable id='threaded_comment_js' var='post'>
-  <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
+</nav>
 
-  <script type='text/javascript'>
-    (function() {
-      var items = <data:post.commentJso/>;
-      var msgs = <data:post.commentMsgs/>;
-      var config = <data:post.commentConfig/>;
+<!-- JAVASCRIPT ACTIONS ENGINE -->
+<script>
+    function dcToggleDesktopDrop(event, elementId) {
+        event.preventDefault();
+        event.stopPropagation();
 
-// <![CDATA[
-      var cursor = null;
-      if (items && items.length > 0) {
-        cursor = parseInt(items[items.length - 1].timestamp) + 1;
-      }
+        var targetDropdown = document.getElementById(elementId);
+        var currentButton = event.currentTarget;
+        var isAlreadyOpen = targetDropdown.classList.contains('dc-show-box');
 
-      var bodyFromEntry = function(entry) {
-        var text = (entry &&
-                    ((entry.content && entry.content.$t) ||
-                     (entry.summary && entry.summary.$t))) ||
-            '';
-        if (entry && entry.gd$extendedProperty) {
-          for (var k in entry.gd$extendedProperty) {
-            if (entry.gd$extendedProperty[k].name == 'blogger.contentRemoved') {
-              return '<span class="deleted-comment">' + text + '</span>';
-            }
-          }
+        // Close all other open boxes
+        document.querySelectorAll('.dc-expansion-box').forEach(function(box) {
+            if (box.id !== elementId) box.classList.remove('dc-show-box');
+        });
+        document.querySelectorAll('.dc-menu-btn').forEach(function(btn) {
+            if (btn !== currentButton) btn.classList.remove('dc-btn-active');
+        });
+
+        // Toggle state
+        if (!isAlreadyOpen) {
+            targetDropdown.classList.add('dc-show-box');
+            currentButton.classList.add('dc-btn-active');
+        } else {
+            targetDropdown.classList.remove('dc-show-box');
+            currentButton.classList.remove('dc-btn-active');
         }
-        return text;
-      }
+    }
 
-      var parse = function(data) {
-        cursor = null;
-        var comments = [];
-        if (data && data.feed && data.feed.entry) {
-          for (var i = 0, entry; entry = data.feed.entry[i]; i++) {
-            var comment = {};
-            // comment ID, parsed out of the original id format
-            var id = /blog-(\d+).post-(\d+)/.exec(entry.id.$t);
-            comment.id = id ? id[2] : null;
-            comment.body = bodyFromEntry(entry);
-            comment.timestamp = Date.parse(entry.published.$t) + '';
-            if (entry.author && entry.author.constructor === Array) {
-              var auth = entry.author[0];
-              if (auth) {
-                comment.author = {
-                  name: (auth.name ? auth.name.$t : undefined),
-                  profileUrl: (auth.uri ? auth.uri.$t : undefined),
-                  avatarUrl: (auth.gd$image ? auth.gd$image.src : undefined)
-                };
-              }
-            }
-            if (entry.link) {
-              if (entry.link[2]) {
-                comment.link = comment.permalink = entry.link[2].href;
-              }
-              if (entry.link[3]) {
-                var pid = /.*comments\/default\/(\d+)\?.*/.exec(entry.link[3].href);
-                if (pid && pid[1]) {
-                  comment.parentId = pid[1];
-                }
-              }
-            }
-            comment.deleteclass = 'item-control blog-admin';
-            if (entry.gd$extendedProperty) {
-              for (var k in entry.gd$extendedProperty) {
-                if (entry.gd$extendedProperty[k].name == 'blogger.itemClass') {
-                  comment.deleteclass += ' ' + entry.gd$extendedProperty[k].value;
-                } else if (entry.gd$extendedProperty[k].name == 'blogger.displayTime') {
-                  comment.displayTime = entry.gd$extendedProperty[k].value;
-                }
-              }
-            }
-            comments.push(comment);
-          }
+    function dcToggleMobileLinks(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        var menuGrid = document.getElementById('dc-menu-links-wrapper');
+        menuGrid.classList.toggle('dc-mobile-show');
+    }
+
+    // Auto close engine on viewport clicking away
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.dc-menu-item') && !event.target.closest('.dc-mobile-toggle')) {
+            document.querySelectorAll('.dc-expansion-box').forEach(function(box) {
+                box.classList.remove('dc-show-box');
+            });
+            document.querySelectorAll('.dc-menu-btn').forEach(function(btn) {
+                btn.classList.remove('dc-btn-active');
+            });
+            var menuGrid = document.getElementById('dc-menu-links-wrapper');
+            if(menuGrid) menuGrid.classList.remove('dc-mobile-show');
         }
-        return comments;
-      };
+    });
+</script>
 
-      var paginator = function(callback) {
-        if (hasMore()) {
-          var url = config.feed + '?alt=json&v=2&orderby=published&reverse=false&max-results=50';
-          if (cursor) {
-            url += '&published-min=' + new Date(cursor).toISOString();
-          }
-          window.bloggercomments = function(data) {
-            var parsed = parse(data);
-            cursor = parsed.length < 50 ? null
-                : parseInt(parsed[parsed.length - 1].timestamp) + 1
-            callback(parsed);
-            window.bloggercomments = null;
-          }
-          url += '&callback=bloggercomments';
-          var script = document.createElement('script');
-          script.type = 'text/javascript';
-          script.src = url;
-          document.getElementsByTagName('head')[0].appendChild(script);
+<!-- STYLING ARCHITECTURE -->
+<style>
+    :root {
+        --dc-dark-bg: #000000;
+        --dc-box-bg: #111113;
+        --dc-red: #e50914;
+        --dc-bright-text: #ffffff;
+        --dc-dim-text: #b3b3b3;
+        --dc-line-border: rgba(255, 255, 255, 0.08);
+    }
+
+    /* Layout framework clean up fixes */
+    .HTML, .widget-content, #header, .header-outer, .section {
+        overflow: visible !important;
+    }
+
+    .dc-desktop-nav {
+        background-color: var(--dc-dark-bg) !important;
+        border-bottom: 1px solid var(--dc-line-border) !important;
+        width: 100% !important;
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 9999999 !important;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+    }
+    .dc-desktop-nav * {
+        box-sizing: border-box !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dc-nav-container {
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        padding: 14px 20px !important;
+        position: relative;
+    }
+
+    .dc-brand-logo {
+        color: var(--dc-bright-text) !important;
+        text-decoration: none !important;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+        font-size: 22px !important;
+        font-weight: 900 !important;
+        letter-spacing: 1px !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+.dc-brand-badge {
+        background-color: var(--dc-red) !important;
+        color: #ffffff !important;
+        font-size: 17px !important;        
+        padding: 3px 7px !important;      
+        border-radius: 5px !important;    
+        margin-left: 6px !important;       
+        font-weight: 777 !important;      
+        letter-spacing: 0.5px !important;  
+    }
+
+    .dc-menu-grid {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 10px !important;
+    }
+
+    .dc-menu-item {
+        position: relative !important;
+    }
+
+    .dc-menu-btn {
+        color: var(--dc-dim-text) !important;
+        text-decoration: none !important;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+        font-size: 14px !important;
+        font-weight: 600 !important;
+        padding: 8px 16px !important;
+        border-radius: 6px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        height: 36px !important;
+        background: transparent !important;
+        transition: all 0.15s ease !important;
+        cursor: pointer;
+    }
+    .dc-btn-arrow {
+        font-size: 8px !important;
+        margin-left: 6px !important;
+        opacity: 0.5 !important;
+        transition: transform 0.15s !important;
+    }
+
+    .dc-menu-btn:hover {
+        color: var(--dc-bright-text) !important;
+        background-color: rgba(255, 255, 255, 0.05) !important;
+    }
+
+    .dc-accent-btn {
+        background-color: rgba(229, 9, 20, 0.1) !important;
+        color: var(--dc-red) !important;
+        border: 1px solid rgba(229, 9, 20, 0.2) !important;
+    }
+    .dc-accent-btn:hover {
+        background-color: var(--dc-red) !important;
+        color: #ffffff !important;
+    }
+
+    .dc-expansion-box {
+        display: none !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        background-color: var(--dc-box-bg) !important;
+        border: 1px solid var(--dc-line-border) !important;
+        border-radius: 6px !important;
+        min-width: 270px !important;
+        padding: 6px !important;
+        margin-top: 5px !important;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.5) !important;
+        z-index: 999999999 !important;
+    }
+    .dc-expansion-box a {
+        color: var(--dc-dim-text) !important;
+        text-decoration: none !important;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
+        font-size: 13px !important;
+        padding: 8px 12px !important;
+        display: block !important;
+        border-radius: 4px !important;
+        transition: all 0.15s ease !important;
+        white-space: nowrap !important;
+    }
+    .dc-expansion-box a:hover {
+        background-color: rgba(255, 255, 255, 0.05) !important;
+        color: var(--dc-bright-text) !important;
+        padding-left: 15px !important;
+    }
+
+    .dc-show-box { display: block !important; }
+    
+    .dc-btn-active {
+        color: var(--dc-bright-text) !important;
+        background-color: rgba(255, 255, 255, 0.05) !important;
+    }
+    .dc-btn-active .dc-btn-arrow {
+        transform: rotate(180deg) !important;
+        color: var(--dc-red) !important;
+        opacity: 1 !important;
+    }
+
+    .dc-mobile-toggle { display: none; }
+
+    /* Responsive Mobile UI Framework Engine */
+    @media (max-width: 768px) {
+        .dc-mobile-toggle {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
         }
-      };
-      var hasMore = function() {
-        return !!cursor;
-      };
-      var getMeta = function(key, comment) {
-        if ('iswriter' == key) {
-          var matches = !!comment.author
-              && comment.author.name == config.authorName
-              && comment.author.profileUrl == config.authorUrl;
-          return matches ? 'true' : '';
-        } else if ('deletelink' == key) {
-          return config.baseUri + '/comment/delete/'
-               + config.blogId + '/' + comment.id;
-        } else if ('deleteclass' == key) {
-          return comment.deleteclass;
+        .dc-mobile-toggle .dc-bar {
+            width: 20px;
+            height: 2px;
+            background-color: var(--dc-bright-text);
+            border-radius: 2px;
         }
-        return '';
-      };
 
-      var replybox = null;
-      var replyUrlParts = null;
-      var replyParent = undefined;
-
-      var onReply = function(commentId, domId) {
-        if (replybox == null) {
-          // lazily cache replybox, and adjust to suit this style:
-          replybox = document.getElementById('comment-editor');
-          if (replybox != null) {
-            replybox.height = '250px';
-            replybox.style.display = 'block';
-            replyUrlParts = replybox.src.split('#');
-          }
+        .dc-menu-grid {
+            display: none !important;
+            flex-direction: column !important;
+            position: absolute !important;
+            top: 100% !important;
+            left: 0 !important;
+            width: 100% !important;
+            background-color: var(--dc-dark-bg) !important;
+            border-top: 1px solid var(--dc-line-border) !important;
+            padding: 10px 20px !important;
+            gap: 5px !important;
         }
-        if (replybox && (commentId !== replyParent)) {
-          replybox.src = '';
-          document.getElementById(domId).insertBefore(replybox, null);
-          replybox.src = replyUrlParts[0]
-              + (commentId ? '&parentID=' + commentId : '')
-              + '#' + replyUrlParts[1];
-          replyParent = commentId;
+        
+        .dc-menu-grid.dc-mobile-show {
+            display: flex !important;
         }
-      };
 
-      var hash = (window.location.hash || '#').substring(1);
-      var startThread, targetComment;
-      if (/^comment-form_/.test(hash)) {
-        startThread = hash.substring('comment-form_'.length);
-      } else if (/^c[0-9]+$/.test(hash)) {
-        targetComment = hash.substring(1);
-      }
-
-      // Configure commenting API:
-      var configJso = {
-        'maxDepth': config.maxThreadDepth
-      };
-      var provider = {
-        'id': config.postId,
-        'data': items,
-        'loadNext': paginator,
-        'hasMore': hasMore,
-        'getMeta': getMeta,
-        'onReply': onReply,
-        'rendered': true,
-        'initComment': targetComment,
-        'initReplyThread': startThread,
-        'config': configJso,
-        'messages': msgs
-      };
-
-      var render = function() {
-        if (window.goog && window.goog.comments) {
-          var holder = document.getElementById('comment-holder');
-          window.goog.comments.render(holder, provider);
+        .dc-menu-btn {
+            width: 100% !important;
+            justify-content: space-between !important;
         }
-      };
 
-      // render now, or queue to render when library loads:
-      if (window.goog && window.goog.comments) {
-        render();
-      } else {
-        window.goog = window.goog || {};
-        window.goog.comments = window.goog.comments || {};
-        window.goog.comments.loadQueue = window.goog.comments.loadQueue || [];
-        window.goog.comments.loadQueue.push(render);
-      }
-    })();
-// ]]>
-  </script>
-</b:includable>
-              <b:includable id='threaded_comments' var='post'>
-  <div class='comments' id='comments'>
-    <a name='comments'/>
-    <h4><data:post.commentLabelFull/>:</h4>
-
-    <div class='comments-content'>
-      <b:include cond='data:post.embedCommentForm' data='post' name='threaded_comment_js'/>
-      <div id='comment-holder'>
-         <data:post.commentHtml/>
-      </div>
-    </div>
-
-    <p class='comment-footer'>
-      <b:if cond='data:post.allowNewComments'>
-        <b:include data='post' name='threaded-comment-form'/>
-      <b:else/>
-        <data:post.noNewCommentsText/>
-      </b:if>
-    </p>
-
-    <b:if cond='data:showCmtPopup'>
-      <div id='comment-popup'>
-        <iframe allowtransparency='true' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
-        </iframe>
-      </div>
-    </b:if>
-
-    <div id='backlinks-container'>
-    <div expr:id='data:widget.instanceId + &quot;_backlinks-container&quot;'>
-    </div>
-    </div>
-  </div>
-</b:includable>
-            </b:widget>
-          </b:section>
-        </div>
-        </div>
-
-        <div class='column-left-outer'>
-        <div class='column-left-inner'>
-          <aside>
-          <macro:include id='main-column-left-sections' name='sections'>
-            <macro:param default='0' name='num' value='1'/>
-            <macro:param default='sidebar-left' name='idPrefix'/>
-            <macro:param default='sidebar' name='class'/>
-            <macro:param default='true' name='includeBottom'/>
-          </macro:include>
-          </aside>
-        </div>
-        </div>
-
-        <div class='column-right-outer'>
-        <div class='column-right-inner'>
-          <aside>
-          <macro:include id='main-column-right-sections' name='sections'>
-            <macro:param default='2' name='num' value='1'/>
-            <macro:param default='sidebar-right' name='idPrefix'/>
-            <macro:param default='sidebar' name='class'/>
-            <macro:param default='true' name='includeBottom'/>
-          </macro:include>
-          </aside>
-        </div>
-        </div>
-
-        </div>
-
-        <div style='clear: both'/>
-      <!-- columns -->
-      </div>
-
-    <!-- main -->
-    </div>
-    </div>
-    <div class='main-cap-bottom cap-bottom'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    </div>
-
-    <footer>
-    <div class='footer-outer'>
-    <div class='footer-cap-top cap-top'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    <div class='fauxborder-left footer-fauxborder-left'>
-    <div class='fauxborder-right footer-fauxborder-right'/>
-    <div class='region-inner footer-inner'>
-      <macro:include id='footer-sections' name='sections'>
-        <macro:param default='2' name='num' value='1'/>
-        <macro:param default='footer' name='idPrefix'/>
-        <macro:param default='foot' name='class'/>
-        <macro:param default='false' name='includeBottom'/>
-      </macro:include>
-      <!-- outside of the include in order to lock Attribution widget -->
-      <b:section class='foot' id='footer-3' name='Footer' showaddelement='no'>
-        <b:widget id='Attribution1' locked='true' title='' type='Attribution'>
-          <b:widget-settings>
-            <b:widget-setting name='copyright'/>
-          </b:widget-settings>
-          <b:includable id='main'>
-    <div class='widget-content' style='text-align: center;'>
-      <b:if cond='data:attribution != &quot;&quot;'>
-       <data:attribution/>
-      </b:if>
-    </div>
-
-    <b:include name='quickedit'/>
-  </b:includable>
-        </b:widget>
-        <b:widget id='Image1' locked='false' title='' type='Image'>
-          <b:widget-settings>
-            <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEiYrf7bGM47geg5sYjcnMhmuMXi1VzhcMHKgm2454Q7M5h-jkNBKC22pNpDyedjK7gc1JAJxzYOg2ZecGSu5BNp_OLaX8RP8Pak7phhdvptFjm3csNjRESLB5bQx5nFEVPRyfhEk1L-luFXa_d6rBwgai0ifCD5KTOsVk9DdobdwycyqBVlNZN7bV7dojI=s135</b:widget-setting>
-            <b:widget-setting name='displayHeight'>127</b:widget-setting>
-            <b:widget-setting name='sectionWidth'>997</b:widget-setting>
-            <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
-            <b:widget-setting name='displayWidth'>135</b:widget-setting>
-            <b:widget-setting name='link'>https://worldwidemyanmaragency.blogspot.com/</b:widget-setting>
-            <b:widget-setting name='caption'> </b:widget-setting>
-          </b:widget-settings>
-          <b:includable id='main'>
-    <b:if cond='data:title != &quot;&quot;'>
-      <h2><data:title/></h2>
-    </b:if>
-    <div class='widget-content'>
-      <b:tag cond='data:link' expr:href='data:link' name='a'>
-        <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'/>
-      </b:tag>
-      <br/>
-      <b:if cond='data:caption'>
-        <span class='caption'><data:caption/></span>
-      </b:if>
-    </div>
-    <b:include name='quickedit'/>
-  </b:includable>
-        </b:widget>
-        <b:widget id='Text1' locked='false' title='Copyright © 2025 [WMA]' type='Text'>
-          <b:widget-settings>
-            <b:widget-setting name='content'>Worldwide Myanmar Agency. All Rights Reserved (TM)</b:widget-setting>
-          </b:widget-settings>
-          <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-
-  <b:include name='quickedit'/>
-</b:includable>
-        </b:widget>
-      </b:section>
-    </div>
-    </div>
-    <div class='footer-cap-bottom cap-bottom'>
-      <div class='cap-left'/>
-      <div class='cap-right'/>
-    </div>
-    </div>
-    </footer>
-
-  <!-- content -->
-  </div>
-  </div>
-  <div class='content-cap-bottom cap-bottom'>
-    <div class='cap-left'/>
-    <div class='cap-right'/>
-  </div>
-  </div>
-  </div>
-
-  <script type='text/javascript'>
+        .dc-expansion-box {
+            position: static !important;
+            box-shadow: none !important;
+            width: 100% !important;
+            margin-top: 0 !important;
+            background-color: transparent !important;
+            border: none !important;
+            padding-left: 15px !important;
+        }
+    }
+</style>
+</div>
+<div class='clear'></div>
+</div></div>
+</div>
+</div>
+<div class='column-left-outer'>
+<div class='column-left-inner'>
+<aside>
+</aside>
+</div>
+</div>
+<div class='column-right-outer'>
+<div class='column-right-inner'>
+<aside>
+</aside>
+</div>
+</div>
+</div>
+<div style='clear: both'></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class='main-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<footer>
+<div class='footer-outer'>
+<div class='footer-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left footer-fauxborder-left'>
+<div class='fauxborder-right footer-fauxborder-right'></div>
+<div class='region-inner footer-inner'>
+<div class='foot no-items section' id='footer-1'></div>
+<!-- outside of the include in order to lock Attribution widget -->
+<div class='foot section' id='footer-3' name='Footer'><div class='widget Attribution' data-version='1' id='Attribution1'>
+<div class='widget-content' style='text-align: center;'>
+Copyright &#169; 2026 Dagon Entertainment Channel, All Rights Reserved. Powered by <a href='https://www.blogger.com' target='_blank'>Blogger</a>.
+</div>
+<div class='clear'></div>
+</div></div>
+</div>
+</div>
+<div class='footer-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</footer>
+<!-- content -->
+</div>
+</div>
+<div class='content-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<script type='text/javascript'>
     window.setTimeout(function() {
-        document.body.className = document.body.className.replace(&#39;loading&#39;, &#39;&#39;);
+        document.body.className = document.body.className.replace('loading', '');
       }, 10);
   </script>
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/1531375970-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AEUoTZodfqmT8H1GR9TBk9CPxs0P:1783972672192';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d113497483655965805','//dagonchannel.blogspot.com/','113497483655965805');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '113497483655965805', 'title': 'Dagon Entertainment Channel', 'url': 'https://dagonchannel.blogspot.com/', 'canonicalUrl': 'https://dagonchannel.blogspot.com/', 'homepageUrl': 'https://dagonchannel.blogspot.com/', 'searchUrl': 'https://dagonchannel.blogspot.com/search', 'canonicalHomepageUrl': 'https://dagonchannel.blogspot.com/', 'blogspotFaviconUrl': 'https://dagonchannel.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'isDynamicViewsAvailable': true, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Dagon Entertainment Channel - Atom\x22 href\x3d\x22https://dagonchannel.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Dagon Entertainment Channel - RSS\x22 href\x3d\x22https://dagonchannel.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Dagon Entertainment Channel - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/113497483655965805/posts/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': true, 'adsenseAutoAds': false, 'boqCommentIframeForm': true, 'loginRedirectParam': '', 'isGoogleEverywhereLinkTooltipEnabled': true, 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/7b5894e2a0a8526d', 'plusOneApiSrc': 'https://apis.google.com/js/platform.js', 'disableGComments': true, 'interstitialAccepted': false, 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'X', 'key': 'twitter', 'shareMessage': 'Share to X', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 0, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Read more', 'pageType': 'index', 'pageName': '', 'pageTitle': 'Dagon Entertainment Channel'}}, {'name': 'features', 'data': {}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Link copied to clipboard!', 'ok': 'Ok', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'isResponsive': false, 'isAlternateRendering': false, 'isCustom': false}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Dagon Entertainment Channel', 'description': 'Dagon Entertainment Channel | Movies, TV Series and TV Shows', 'url': 'https://dagonchannel.blogspot.com/', 'type': 'feed', 'isSingleItem': false, 'isMultipleItems': true, 'isError': false, 'isPage': false, 'isPost': false, 'isHomepage': true, 'isArchive': false, 'isLabelSearch': false}}]);
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'crosscol', document.getElementById('PageList1'), {'title': 'Pages', 'links': [{'isCurrentPage': false, 'href': 'https://dagonchannel.blogspot.com/p/myanmar.html', 'id': '4311079352279265660', 'title': '\u1019\u103c\u1014\u103a\u1019\u102c\u1037\u101b\u102f\u1015\u103a\u101b\u103e\u1004\u103a\ud83c\udfac'}, {'isCurrentPage': false, 'href': 'https://dagonchannel.blogspot.com/p/english.html', 'id': '3426984009397224673', 'title': '\u101f\u1031\u102c\u101c\u102d\u101d\u102f\u1012\u103a \u2728'}, {'isCurrentPage': false, 'href': 'https://dagonchannel.blogspot.com/p/asian.html', 'id': '3351754940923751827', 'title': '\u1021\u102c\u101b\u103e\u101b\u102f\u1015\u103a\u101b\u103e\u1004\u103a\ud83c\udf34'}, {'isCurrentPage': false, 'href': 'https://dagonchannel.blogspot.com/p/indian.html', 'id': '6881426344220638631', 'title': '\u1021\u102d\u1014\u1039\u1012\u102d\u101a\u101b\u102f\u1015\u103a\u101b\u103e\u1004\u103a\u2728'}, {'isCurrentPage': false, 'href': 'https://dagonchannel.blogspot.com/p/world.html', 'id': '3041933174968959322', 'title': '\u1000\u1019\u1039\u1018\u102c\u1037\u101b\u102f\u1015\u103a\u101b\u103e\u1004\u103a\u1019\u103b\u102c\u1038\ud83c\udf0d'}, {'isCurrentPage': false, 'href': 'https://dagonchannel.blogspot.com/p/animation.html', 'id': '4311447363944566306', 'title': '\u1000\u102c\u1010\u103d\u1014\u103a\u1038\u1000\u102c\u1038\ud83c\udfef '}, {'isCurrentPage': false, 'href': 'https://dagonchannel.blogspot.com/p/documentary.html', 'id': '4358330932931387942', 'title': '\u1019\u103e\u1010\u103a\u1010\u1019\u103a\u1038\u101b\u102f\u1015\u103a\u101b\u103e\u1004\u103a\ud83e\udded'}, {'isCurrentPage': false, 'href': 'https://dagonchannel.blogspot.com/p/comedy.html', 'id': '8651644774380494017', 'title': '\u101f\u102c\u101e\u1019\u103b\u102c\u1038\ud83e\udd20'}, {'isCurrentPage': false, 'href': 'https://dagonchannel.blogspot.com/p/tv-drama.html', 'id': '2976634830219575081', 'title': 'TV \u1005\u102e\u1038\u101b\u102e\u1038\u1019\u103b\u102c\u1038\ud83d\udc51 '}], 'mobile': false, 'showPlaceholder': true, 'hasCurrentPage': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'main', document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', document.getElementById('Attribution1'), {}, 'displayModeFull'));
+</script>
 </body>
-
-<macro:includable id='sections' var='col'>
-  <macro:if cond='data:col.num == 0'>
-  <macro:else/>
-    <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-1&quot;' preferred='yes' showaddelement='yes'/>
-
-    <macro:if cond='data:col.num &gt;= 2'>
-      <table border='0' cellpadding='0' cellspacing='0' mexpr:class='&quot;section-columns columns-&quot; + data:col.num'>
-      <tbody>
-      <tr>
-        <td class='first columns-cell'>
-          <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-1&quot;'/>
-        </td>
-
-        <td class='columns-cell'>
-          <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-2&quot;'/>
-        </td>
-
-        <macro:if cond='data:col.num &gt;= 3'>
-          <td class='columns-cell'>
-            <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-3&quot;'/>
-          </td>
-        </macro:if>
-
-        <macro:if cond='data:col.num &gt;= 4'>
-          <td class='columns-cell'>
-            <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-2-4&quot;'/>
-          </td>
-        </macro:if>
-      </tr>
-      </tbody>
-      </table>
-
-      <macro:if cond='data:col.includeBottom'>
-        <b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &quot;-3&quot;' showaddelement='no'/>
-      </macro:if>
-    </macro:if>
-  </macro:if>
-</macro:includable>
-
-<b:section-contents id='sidebar-left-1'>
-  <b:widget id='Image2' locked='false' title='' type='Image'>
-    <b:widget-settings>
-      <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEjYceXwTXCvFL_DiqKCJNUO8oMocg6haf7vdP9oai2N4WIkC7WZkChyL6IadKblickF1zhSjeGh8Tw_cYibYB94v0A9aqa6Tkt5qGT_TY1fwsKQl75ecWFKIzg7yD7zuumucTyJdn6snvkDdUfhXan8ZzFfQrQi0wYe2MvJ7LbGhifAaqTzTG8TYZDu3js=s116</b:widget-setting>
-      <b:widget-setting name='displayHeight'>109</b:widget-setting>
-      <b:widget-setting name='sectionWidth'>116</b:widget-setting>
-      <b:widget-setting name='shrinkToFit'>true</b:widget-setting>
-      <b:widget-setting name='displayWidth'>116</b:widget-setting>
-      <b:widget-setting name='link'>https://worldwidemyanmaragency.blogspot.com/</b:widget-setting>
-      <b:widget-setting name='caption'/>
-    </b:widget-settings>
-    <b:includable id='main'>
-    <b:if cond='data:title != &quot;&quot;'>
-      <h2><data:title/></h2>
-    </b:if>
-    <div class='widget-content'>
-      <b:tag cond='data:link' expr:href='data:link' name='a'>
-        <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'/>
-      </b:tag>
-      <br/>
-      <b:if cond='data:caption'>
-        <span class='caption'><data:caption/></span>
-      </b:if>
-    </div>
-    <b:include name='quickedit'/>
-  </b:includable>
-  </b:widget>
-  <b:widget id='Label1' locked='false' title='Categories' type='Label'>
-    <b:widget-settings>
-      <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
-      <b:widget-setting name='display'>LIST</b:widget-setting>
-      <b:widget-setting name='selectedLabelsList'>Announcement,Dhamma,For Lease,For Sale,Korea Drama,TV Series</b:widget-setting>
-      <b:widget-setting name='showType'>USER_SELECTED</b:widget-setting>
-      <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2><data:title/></h2>
-  </b:if>
-  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
-    <b:if cond='data:display == &quot;list&quot;'>
-      <ul>
-        <b:loop values='data:labels' var='label'>
-          <li>
-            <b:if cond='data:blog.url == data:label.url'>
-              <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
-            <b:else/>
-              <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-            </b:if>
-            <b:if cond='data:showFreqNumbers'>
-              <span dir='ltr'>(<data:label.count/>)</span>
-            </b:if>
-          </li>
-        </b:loop>
-      </ul>
-    <b:else/>
-      <b:loop values='data:labels' var='label'>
-        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
-          <b:if cond='data:blog.url == data:label.url'>
-            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
-          <b:else/>
-            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
-          </b:if>
-          <b:if cond='data:showFreqNumbers'>
-            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
-          </b:if>
-        </span>
-      </b:loop>
-    </b:if>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-  </b:widget>
-  <b:widget id='BlogArchive1' locked='false' title='Archive' type='BlogArchive'>
-    <b:widget-settings>
-      <b:widget-setting name='showStyle'>FLAT</b:widget-setting>
-      <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
-      <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
-      <b:widget-setting name='monthPattern'>MMMM yyyy</b:widget-setting>
-      <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
-      <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
-      <b:widget-setting name='chronological'>false</b:widget-setting>
-      <b:widget-setting name='showPosts'>false</b:widget-setting>
-      <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-  <div id='ArchiveList'>
-  <div expr:id='data:widget.instanceId + &quot;_ArchiveList&quot;'>
-    <b:include cond='data:style == &quot;HIERARCHY&quot;' data='data' name='interval'/>
-    <b:include cond='data:style == &quot;FLAT&quot;' data='data' name='flat'/>
-    <b:include cond='data:style == &quot;MENU&quot;' data='data' name='menu'/>
-  </div>
-  </div>
-  <b:include name='quickedit'/>
-  </div>
-</b:includable>
-    <b:includable id='flat' var='data'>
-  <ul class='flat'>
-    <b:loop values='data:data' var='i'>
-      <li class='archivedate'>
-        <a expr:href='data:i.url'><data:i.name/></a> (<data:i.post-count/>)
-      </li>
-    </b:loop>
-  </ul>
-</b:includable>
-    <b:includable id='interval' var='intervalData'>
-  <b:loop values='data:intervalData' var='interval'>
-    <ul class='hierarchy'>
-      <li expr:class='&quot;archivedate &quot; + data:interval.expclass'>
-        <b:include cond='data:interval.toggleId' data='interval' name='toggle'/>
-        <a class='post-count-link' expr:href='data:interval.url'>
-          <data:interval.name/>
-        </a>
-        <span class='post-count' dir='ltr'>(<data:interval.post-count/>)</span>
-        <b:include cond='data:interval.data' data='interval.data' name='interval'/>
-        <b:include cond='data:interval.posts' data='interval.posts' name='posts'/>
-      </li>
-    </ul>
-  </b:loop>
-</b:includable>
-    <b:includable id='menu' var='data'>
-  <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
-    <option value=''><data:title/></option>
-    <b:loop values='data:data' var='i'>
-      <option expr:value='data:i.url'><data:i.name/> (<data:i.post-count/>)</option>
-    </b:loop>
-  </select>
-</b:includable>
-    <b:includable id='posts' var='posts'>
-  <ul class='posts'>
-    <b:loop values='data:posts' var='post'>
-      <li><a expr:href='data:post.url'><data:post.title/></a></li>
-    </b:loop>
-  </ul>
-</b:includable>
-    <b:includable id='toggle' var='interval'>
-  <a class='toggle' href='javascript:void(0)'>
-    <span expr:class='&quot;zippy&quot; + (data:interval.expclass == &quot;expanded&quot; ? &quot; toggle-open&quot; : &quot;&quot;)'>
-      <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
-        &#9660;&#160;
-      <b:elseif cond='data:blog.languageDirection == &quot;rtl&quot;'/>
-        &#9668;&#160;
-      <b:else/>
-        &#9658;&#160;
-      </b:if>
-    </span>
-  </a>
-</b:includable>
-  </b:widget>
-  <b:widget id='AdSense1' locked='false' title='' type='AdSense'>
-    <b:includable id='main'>
-  <div class='widget-content'>
-    <data:adCode/>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-  </b:widget>
-  <b:widget id='AdSense2' locked='false' title='' type='AdSense'>
-    <b:includable id='main'>
-  <div class='widget-content'>
-    <data:adCode/>
-    <b:include name='quickedit'/>
-  </div>
-</b:includable>
-  </b:widget>
-</b:section-contents><b:section-contents id='sidebar-right-1'>
-  <b:widget id='Image3' locked='false' title='' type='Image'>
-    <b:widget-settings>
-      <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEg62EQjnEJu_cTsu_68U46PErZcGwoNkazEPjTo2ftkhw0zH8Z1twianrS8OrWViWCBgNvp2h9--g_CiXJJG68ARAk5Xr2s_aK1WugQUfPlpWYiy2rBkwDkk7mV8pz_ab5K5g7k-2vnLEK9Cjk0KIN3ikbdunqBKe3ltRa95ODF2Z_ZxLSwuv1SH5Nltq8=s590</b:widget-setting>
-      <b:widget-setting name='displayHeight'>332</b:widget-setting>
-      <b:widget-setting name='sectionWidth'>590</b:widget-setting>
-      <b:widget-setting name='shrinkToFit'>true</b:widget-setting>
-      <b:widget-setting name='displayWidth'>590</b:widget-setting>
-      <b:widget-setting name='link'>https://cms-image-bucket-productionv3-ap-northeast-1-a7d2.s3.ap-northeast-1.amazonaws.com/images/4/3/4/3/46253434-1-eng-GB/photo_SXM2023071800011607.jpg</b:widget-setting>
-      <b:widget-setting name='caption'/>
-    </b:widget-settings>
-    <b:includable id='main'>
-    <b:if cond='data:title != &quot;&quot;'>
-      <h2><data:title/></h2>
-    </b:if>
-    <div class='widget-content'>
-      <b:tag cond='data:link' expr:href='data:link' name='a'>
-        <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'/>
-      </b:tag>
-      <br/>
-      <b:if cond='data:caption'>
-        <span class='caption'><data:caption/></span>
-      </b:if>
-    </div>
-    <b:include name='quickedit'/>
-  </b:includable>
-  </b:widget>
-  <b:widget id='BlogSearch1' locked='false' title='Find The Post' type='BlogSearch'>
-    <b:includable id='main'>
-    <!-- only display title if it's non-empty -->
-    <b:if cond='data:title != &quot;&quot;'>
-      <h2 class='title'><data:title/></h2>
-    </b:if>
-
-    <div class='widget-content'>
-      <div expr:id='data:widget.instanceId + &quot;_form&quot;'>
-        <form class='gsc-search-box' expr:action='data:blog.searchUrl'>
-          <b:attr cond='not data:view.isPreview' name='target' value='_top'/>
-          <table cellpadding='0' cellspacing='0' class='gsc-search-box'>
-            <tbody>
-              <tr>
-                <td class='gsc-input'>
-                  <input autocomplete='off' class='gsc-input' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' name='q' size='10' title='search' type='text'/>
-                </td>
-                <td class='gsc-search-button'>
-                  <input class='gsc-search-button' expr:value='data:messages.search' title='search' type='submit'/>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </form>
-      </div>
-    </div>
-
-    <b:include name='quickedit'/>
-  </b:includable>
-  </b:widget>
-  <b:widget id='Feed1' locked='false' title='NY Times World News' type='Feed'>
-    <b:widget-settings>
-      <b:widget-setting name='feedUrl'>https://rss.nytimes.com/services/xml/rss/nyt/World.xml</b:widget-setting>
-      <b:widget-setting name='openLinksInNewWindow'>false</b:widget-setting>
-      <b:widget-setting name='numItemsShow'>5</b:widget-setting>
-      <b:widget-setting name='showItemDate'>false</b:widget-setting>
-      <b:widget-setting name='showItemAuthor'>false</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-    <h2><data:title/></h2>
-    <div class='widget-content' expr:id='data:widget.instanceId + &quot;_feedItemListDisplay&quot;'>
-      <span style='filter: alpha(25); opacity: 0.25;'>
-        <a expr:href='data:feedUrl'><data:loadingMsg/></a>
-      </span>
-    </div>
-    <b:include name='quickedit'/>
-  </b:includable>
-  </b:widget>
-  <b:widget id='Feed2' locked='false' title='BBC Burmese သတင်းများ' type='Feed'>
-    <b:widget-settings>
-      <b:widget-setting name='feedUrl'>http://www.bbc.co.uk/burmese/index.xml</b:widget-setting>
-      <b:widget-setting name='openLinksInNewWindow'>false</b:widget-setting>
-      <b:widget-setting name='numItemsShow'>5</b:widget-setting>
-      <b:widget-setting name='showItemDate'>false</b:widget-setting>
-      <b:widget-setting name='showItemAuthor'>false</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-    <h2><data:title/></h2>
-    <div class='widget-content' expr:id='data:widget.instanceId + &quot;_feedItemListDisplay&quot;'>
-      <span style='filter: alpha(25); opacity: 0.25;'>
-        <a expr:href='data:feedUrl'><data:loadingMsg/></a>
-      </span>
-    </div>
-    <b:include name='quickedit'/>
-  </b:includable>
-  </b:widget>
-  <b:widget id='ContactForm1' locked='false' title='Contact Us' type='ContactForm'>
-    <b:includable id='main'>
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='contact-form-widget'>
-    <div class='form'>
-      <form name='contact-form'>
-        <p/>
-        <data:contactFormNameMsg/>
-        <br/>
-        <input class='contact-form-name' expr:id='data:widget.instanceId + &quot;_contact-form-name&quot;' name='name' size='30' type='text' value=''/>
-        <p/>
-        <data:contactFormEmailMsg/> <span style='font-weight: bolder;'>*</span>
-        <br/>
-        <input class='contact-form-email' expr:id='data:widget.instanceId + &quot;_contact-form-email&quot;' name='email' size='30' type='text' value=''/>
-        <p/>
-        <data:contactFormMessageMsg/> <span style='font-weight: bolder;'>*</span>
-        <br/>
-        <textarea class='contact-form-email-message' cols='25' expr:id='data:widget.instanceId + &quot;_contact-form-email-message&quot;' name='email-message' rows='5'/>
-        <p/>
-        <input class='contact-form-button contact-form-button-submit' expr:id='data:widget.instanceId + &quot;_contact-form-submit&quot;' expr:value='data:contactFormSendMsg' type='button'/>
-        <p/>
-        <div style='text-align: center; max-width: 222px; width: 100%'>
-          <p class='contact-form-error-message' expr:id='data:widget.instanceId + &quot;_contact-form-error-message&quot;'/>
-          <p class='contact-form-success-message' expr:id='data:widget.instanceId + &quot;_contact-form-success-message&quot;'/>
-        </div>
-      </form>
-    </div>
-  </div>
-  <b:include name='quickedit'/>
-</b:includable>
-  </b:widget>
-</b:section-contents><b:section-contents id='footer-1'/></html>
+</html>
