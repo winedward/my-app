@@ -27,7 +27,7 @@ URL:      www.blogger.com
    <Group description="Backgrounds" selector=".body-fauxcolumns-outer">
      <Variable name="body.background.color" description="Outer Background" type="color" default="#66bbdd" value="#292929"/>
      <Variable name="content.background.color" description="Main Background" type="color" default="#ffffff" value="#333333"/>
-     <Variable name="header.background.color" description="Header Background" type="color" default="transparent" value="rgba(0,0,0,0)"/>
+     <Variable name="header.background.color" description="Header Background" type="color" default="transparent" value="transparent"/>
    </Group>
 
    <Group description="Links" selector=".main-outer">
@@ -38,8 +38,8 @@ URL:      www.blogger.com
 
    <Group description="Blog Title" selector=".header h1">
      <Variable name="header.font" description="Font" type="font"
-         default="normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
-     <Variable name="header.text.color" description="Title Color" type="color" default="#3399bb"  value="#ffffff"/>
+         default="normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal bold 57px Cambria"/>
+     <Variable name="header.text.color" description="Title Color" type="color" default="#3399bb"  value="#0F9D58"/>
    </Group>
 
    <Group description="Blog Description" selector=".header .description">
@@ -68,7 +68,7 @@ URL:      www.blogger.com
      <Variable name="date.header.color" description="Text Color" type="color"
          default="$(body.text.color)" value="#cccccc"/>
      <Variable name="date.header.background.color" description="Background Color" type="color"
-         default="transparent" value="rgba(0,0,0,0)"/>
+         default="transparent" value="transparent"/>
      <Variable name="date.header.font" description="Text Font" type="font"
          default="normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal bold 11px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
      <Variable name="date.header.padding" description="Date Header Padding" type="string" default="inherit" value="inherit"/>
@@ -581,9 +581,9 @@ body.mobile  {
 ]]></b:skin>
 
     <b:template-skin>
-      <b:variable default='960px' name='content.width' type='length' value='1111px'/>
-      <b:variable default='0' name='main.column.left.width' type='length' value='0px'/>
-      <b:variable default='310px' name='main.column.right.width' type='length' value='0px'/>
+      <b:variable default='960px' name='content.width' type='length' value='1077px'/>
+      <b:variable default='0' name='main.column.left.width' type='length' value='170px'/>
+      <b:variable default='310px' name='main.column.right.width' type='length' value='237px'/>
 
       <![CDATA[
       body {
@@ -662,7 +662,7 @@ body.mobile  {
 
   <body expr:class='&quot;loading&quot; + data:blog.mobileClass'>
   <b:section class='navbar' id='navbar' maxwidgets='1' name='Navbar' showaddelement='no'>
-    <b:widget id='Navbar1' locked='true' title='Navbar' type='Navbar' version='1'>
+    <b:widget id='Navbar1' locked='true' title='Navbar' type='Navbar'>
       <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
     function setAttributeOnload(object, attribute, val) {
       if(window.addEventListener) {
@@ -679,7 +679,7 @@ body.mobile  {
       gapi.load(&quot;gapi.iframes:gapi.iframes.style.bubble&quot;, function() {
         if (gapi.iframes &amp;&amp; gapi.iframes.getContext) {
           gapi.iframes.getContext().openChild({
-              url: &#39;https://www.blogger.com/navbar/113497483655965805?origin\x3dhttp://localhost:80&#39;,
+              url: &#39;https://www.blogger.com/navbar/1412505531940530342?origin\x3dhttp://localhost:80&#39;,
               where: document.getElementById(&quot;navbar-iframe-container&quot;),
               id: &quot;navbar-iframe&quot;
           });
@@ -764,15 +764,15 @@ head.appendChild(script);
     <div class='fauxborder-right header-fauxborder-right'/>
     <div class='region-inner header-inner'>
       <b:section class='header' id='header' maxwidgets='1' name='Header' showaddelement='no'>
-        <b:widget id='Header1' locked='true' title='Dagon Entertainment Channel (Header)' type='Header'>
+        <b:widget id='Header1' locked='true' title='Worldwide Myanmar   (Header)' type='Header'>
           <b:widget-settings>
-            <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEjT7vr4yHrlkCwDGte4X0yL0fihz4VlDhUsElefEmIsOo40r_EC3ahVyrBb_ksIDG2Di1PEvulJ5fRGT0rFTxNnTg_e7TMiPNQvI68xOZwGdU_yTGkl0zCpjRBuIq-na3RTd5xCbCvgNpMx1aDTw8gj57t5XXtYIAK7UMs7KBRXIiM89Bp4WCPWwnaWII95=s1091</b:widget-setting>
-            <b:widget-setting name='displayHeight'>163</b:widget-setting>
-            <b:widget-setting name='sectionWidth'>1091</b:widget-setting>
+            <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEhiVFDojUFnkZacAKpK19lhmvcDH6uhtOOLL0LpXlwxSAd_y0P84VqthLPf1ipQyxDJMx_6fwAk3X3smN7u46JsorVVn-FlgJ3zq3tgaOWHhqGhEuWf2wNW9kbxJfoT4HY0LUylUNnp1XT6qyKJlAsOCdwNFixRc_XY6UcrXEi3Q5VynwlCZ2hfO21ezbY=s1057</b:widget-setting>
+            <b:widget-setting name='displayHeight'>156</b:widget-setting>
+            <b:widget-setting name='sectionWidth'>1057</b:widget-setting>
             <b:widget-setting name='useImage'>true</b:widget-setting>
             <b:widget-setting name='shrinkToFit'>true</b:widget-setting>
             <b:widget-setting name='imagePlacement'>REPLACE</b:widget-setting>
-            <b:widget-setting name='displayWidth'>1091</b:widget-setting>
+            <b:widget-setting name='displayWidth'>1057</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
 
@@ -859,9 +859,9 @@ head.appendChild(script);
     <div class='fauxborder-right tabs-fauxborder-right'/>
     <div class='region-inner tabs-inner'>
       <b:section class='tabs' id='crosscol' maxwidgets='1' name='Cross-Column' showaddelement='yes'>
-        <b:widget id='PageList1' locked='false' title='Pages' type='PageList'>
+        <b:widget id='PageList1' locked='false' title='' type='PageList'>
           <b:widget-settings>
-            <b:widget-setting name='pageListJson'><![CDATA[{"3426984009397224673":{"href":"https://dagonchannel.blogspot.com/p/english.html","position":1,"title":"ဟောလိဝုဒ် ✨"},"3351754940923751827":{"href":"https://dagonchannel.blogspot.com/p/asian.html","position":2,"title":"အာရှရုပ်ရှင်🌴"},"4311447363944566306":{"href":"https://dagonchannel.blogspot.com/p/animation.html","position":5,"title":"ကာတွန်းကား🏯 "},"8651644774380494017":{"href":"https://dagonchannel.blogspot.com/p/comedy.html","position":7,"title":"ဟာသများ🤠"},"4358330932931387942":{"href":"https://dagonchannel.blogspot.com/p/documentary.html","position":6,"title":"မှတ်တမ်းရုပ်ရှင်🧭"},"4311079352279265660":{"href":"https://dagonchannel.blogspot.com/p/myanmar.html","position":0,"title":"မြန်မာ့ရုပ်ရှင်🎬"},"6881426344220638631":{"href":"https://dagonchannel.blogspot.com/p/indian.html","position":3,"title":"အိန္ဒိယရုပ်ရှင်✨"},"2976634830219575081":{"href":"https://dagonchannel.blogspot.com/p/tv-drama.html","position":8,"title":"TV စီးရီးများ👑 "},"3041933174968959322":{"href":"https://dagonchannel.blogspot.com/p/world.html","position":4,"title":"ကမ္ဘာ့ရုပ်ရှင်များ🌍"}}]]></b:widget-setting>
+            <b:widget-setting name='pageListJson'><![CDATA[{"501098452234670045":{"href":"https://worldwidemyanmaragency.blogspot.com/p/blog-page_10.html","position":4,"title":"Library စာကြည့်တိုက် "},"3607966600536548154":{"href":"https://worldwidemyanmaragency.blogspot.com/p/blog-page.html","position":2,"title":"အိမ်ခြံမြေဥပဒေများ"},"3691357099747410898":{"href":"https://worldwidemyanmaragency.blogspot.com/p/real-estate-laws-in-myanmar-burma.html","position":3,"title":"Real Estate Laws"},"1535179124038283359":{"href":"https://worldwidemyanmaragency.blogspot.com/p/latest-movies.html","position":6,"title":"Movies Download"},"6566869254578295342":{"href":"https://worldwidemyanmaragency.blogspot.com/p/our-service.html","position":1,"title":"Rent or Sale | အိမ်ခြံမြေကြော်ငြာများ "},"8601819682023222488":{"href":"https://worldwidemyanmaragency.blogspot.com/p/infotainment.html","position":5,"title":"ENTERTAINMENT"},"311734807341366294":{"href":"https://worldwidemyanmaragency.blogspot.com/p/about-us.html","position":0,"title":"Home"}}]]></b:widget-setting>
             <b:widget-setting name='homeTitle'>Home</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main'>
@@ -985,14 +985,13 @@ head.appendChild(script);
                 <b:widget-setting name='style.linkcolor'>#ffffff</b:widget-setting>
                 <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
                 <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
-                <b:widget-setting name='timestampLabel'>-</b:widget-setting>
                 <b:widget-setting name='reactionsLabel'/>
                 <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
                 <b:widget-setting name='style.layout'>1x1</b:widget-setting>
                 <b:widget-setting name='showLabels'>true</b:widget-setting>
                 <b:widget-setting name='showLocation'>true</b:widget-setting>
                 <b:widget-setting name='showTimestamp'>true</b:widget-setting>
-                <b:widget-setting name='postsPerAd'>4</b:widget-setting>
+                <b:widget-setting name='postsPerAd'>3</b:widget-setting>
                 <b:widget-setting name='showBacklinks'>false</b:widget-setting>
                 <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
                 <b:widget-setting name='showInlineAds'>true</b:widget-setting>
@@ -1815,365 +1814,6 @@ head.appendChild(script);
   </div>
 </b:includable>
             </b:widget>
-            <b:widget id='HTML1' locked='false' title='' type='HTML'>
-              <b:widget-settings>
-                <b:widget-setting name='content'><![CDATA[<!-- DAGON CHANNEL CROSS-PLATFORM NAV -->
-<nav class="dc-desktop-nav">
-    <div class="dc-nav-container">
-        
-        <!-- Logo Brand -->
-        <a href="https://dagonchannel.blogspot.com/" class="dc-brand-logo">
-            WELCOME<span class="dc-brand-badge">HOME</span>
-        </a>
-
-        <!-- Mobile Menu Toggle Button -->
-        <button class="dc-mobile-toggle" onclick="dcToggleMobileLinks(event)">
-            <span class="dc-bar"></span>
-            <span class="dc-bar"></span>
-            <span class="dc-bar"></span>
-        </button>
-
-        <!-- Menu Navigation Grid Area -->
-        <div class="dc-menu-grid" id="dc-menu-links-wrapper">
-            
-            <!-- Item 1: Main Menu Hub -->
-            <div class="dc-menu-item">
-                <a href="javascript:void(0);" class="dc-menu-btn" onclick="dcToggleDesktopDrop(event, 'drop-top')">
-                    📁 Main Stream <span class="dc-btn-arrow">▼</span>
-                </a>
-                <div class="dc-expansion-box" id="drop-top">
-                    <a href="/search/label/New-Movies">🔥 Best Movies | New Releases</a>
-                    <a href="/search/label/New-Series">🧭 Best Series | New Releases</a>
-                    <a href="/search/label/International-Series">🌐 International TV Series</a> 
-                    <a href="/search/label/K-Drama">🇰🇷 Korea - Korean Dramas</a> 
-                    <a href="/search/label/Myanmar-Series">🎬 Myanmar TV Series</a>
-                </div>
-            </div>
-
-            <!-- Item 2: Genre Hub -->
-            <div class="dc-menu-item">
-                <a href="javascript:void(0);" class="dc-menu-btn" onclick="dcToggleDesktopDrop(event, 'drop-genre')">
-                    🍿 Genre <span class="dc-btn-arrow">▼</span>
-                </a>
-                <div class="dc-expansion-box" id="drop-genre">
-                    <a href="/search/label/Action">🚀 Action Movies</a>
-                    <a href="/search/label/Animation">🧸 Animation</a>
-                    <a href="/search/label/Comedy">😂 Comedy</a>
-                    <a href="/search/label/Horror">👻 Horror</a>
-                </div>
-            </div>
-
-            <!-- Item 3: Country Directory -->
-            <div class="dc-menu-item">
-                <a href="javascript:void(0);" class="dc-menu-btn" onclick="dcToggleDesktopDrop(event, 'drop-country')">
-                    🌍 Country <span class="dc-btn-arrow">▼</span>
-                </a>
-                <div class="dc-expansion-box" id="drop-country">
-                    <a href="/search/label/Myanmar">🇲🇲 Myanmar Films</a>
-                    <a href="https://dagonchannel.blogspot.com/p/hollywood-movies.html">🇺🇸 Hollywood</a>
-                    <a href="https://dagonchannel.blogspot.com/p/korean-films.html">🇰🇷 Korean Cinema</a>
-                </div>
-            </div>
-
-            <!-- Item 4: Live Broadcasts & Media -->
-            <div class="dc-menu-item">
-                <a href="javascript:void(0);" class="dc-menu-btn" onclick="dcToggleDesktopDrop(event, 'drop-On-Air')">
-                    📡 On Air <span class="dc-btn-arrow">▼</span>
-                </a>
-                <div class="dc-expansion-box" id="drop-On-Air">
-                    <a href="/search/label/Myanmar-TV">🌍 Global TV Channels</a> 
-                    <a href="/search/label/Dagon-Live">🔥 Live Streams</a> 
-                    <a href="/search/label/Music-Videos">🎵 Music Videos & Concerts</a> 
-                    <a href="/search/label/Short-Films">🎬 Short Films & Micro Series</a> 
-                    <a href="/search/label/TalkShow">💬 Talk Shows & Interviews</a> 
-                    <a href="/search/label/Podcast">🎙️ Podcasts</a> 
-                    <a href="/search/label/Web-Movies">🌐 Web Movies</a> 
-                </div>
-            </div>
-
-            <!-- Item 5: DMCA Standalone Button -->
-            <div class="dc-menu-item">
-                <a href="https://dagonchannel.blogspot.com/p/dmca_02063264659.html" class="dc-menu-btn">⚖️ DMCA</a>
-            </div>
-
-            <!-- Item 6: Standalone Request Button -->
-            <div class="dc-menu-item">
-                <a href="/p/request.html" class="dc-menu-btn dc-accent-btn">✉️ Request</a>
-            </div>
-            
-        </div>
-    </div>
-</nav>
-
-<!-- JAVASCRIPT ACTIONS ENGINE -->
-<script>
-    function dcToggleDesktopDrop(event, elementId) {
-        event.preventDefault();
-        event.stopPropagation();
-
-        var targetDropdown = document.getElementById(elementId);
-        var currentButton = event.currentTarget;
-        var isAlreadyOpen = targetDropdown.classList.contains('dc-show-box');
-
-        // Close all other open boxes
-        document.querySelectorAll('.dc-expansion-box').forEach(function(box) {
-            if (box.id !== elementId) box.classList.remove('dc-show-box');
-        });
-        document.querySelectorAll('.dc-menu-btn').forEach(function(btn) {
-            if (btn !== currentButton) btn.classList.remove('dc-btn-active');
-        });
-
-        // Toggle state
-        if (!isAlreadyOpen) {
-            targetDropdown.classList.add('dc-show-box');
-            currentButton.classList.add('dc-btn-active');
-        } else {
-            targetDropdown.classList.remove('dc-show-box');
-            currentButton.classList.remove('dc-btn-active');
-        }
-    }
-
-    function dcToggleMobileLinks(event) {
-        event.preventDefault();
-        event.stopPropagation();
-        var menuGrid = document.getElementById('dc-menu-links-wrapper');
-        menuGrid.classList.toggle('dc-mobile-show');
-    }
-
-    // Auto close engine on viewport clicking away
-    document.addEventListener('click', function(event) {
-        if (!event.target.closest('.dc-menu-item') && !event.target.closest('.dc-mobile-toggle')) {
-            document.querySelectorAll('.dc-expansion-box').forEach(function(box) {
-                box.classList.remove('dc-show-box');
-            });
-            document.querySelectorAll('.dc-menu-btn').forEach(function(btn) {
-                btn.classList.remove('dc-btn-active');
-            });
-            var menuGrid = document.getElementById('dc-menu-links-wrapper');
-            if(menuGrid) menuGrid.classList.remove('dc-mobile-show');
-        }
-    });
-</script>
-
-<!-- STYLING ARCHITECTURE -->
-<style>
-    :root {
-        --dc-dark-bg: #000000;
-        --dc-box-bg: #111113;
-        --dc-red: #e50914;
-        --dc-bright-text: #ffffff;
-        --dc-dim-text: #b3b3b3;
-        --dc-line-border: rgba(255, 255, 255, 0.08);
-    }
-
-    /* Layout framework clean up fixes */
-    .HTML, .widget-content, #header, .header-outer, .section {
-        overflow: visible !important;
-    }
-
-    .dc-desktop-nav {
-        background-color: var(--dc-dark-bg) !important;
-        border-bottom: 1px solid var(--dc-line-border) !important;
-        width: 100% !important;
-        position: sticky !important;
-        top: 0 !important;
-        z-index: 9999999 !important;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.7);
-    }
-    .dc-desktop-nav * {
-        box-sizing: border-box !important;
-        margin: 0;
-        padding: 0;
-    }
-
-    .dc-nav-container {
-        max-width: 1200px !important;
-        margin: 0 auto !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-        padding: 14px 20px !important;
-        position: relative;
-    }
-
-    .dc-brand-logo {
-        color: var(--dc-bright-text) !important;
-        text-decoration: none !important;
-        font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
-        font-size: 22px !important;
-        font-weight: 900 !important;
-        letter-spacing: 1px !important;
-        display: flex !important;
-        align-items: center !important;
-    }
-.dc-brand-badge {
-        background-color: var(--dc-red) !important;
-        color: #ffffff !important;
-        font-size: 17px !important;        
-        padding: 3px 7px !important;      
-        border-radius: 5px !important;    
-        margin-left: 6px !important;       
-        font-weight: 777 !important;      
-        letter-spacing: 0.5px !important;  
-    }
-
-    .dc-menu-grid {
-        display: flex !important;
-        flex-direction: row !important;
-        gap: 10px !important;
-    }
-
-    .dc-menu-item {
-        position: relative !important;
-    }
-
-    .dc-menu-btn {
-        color: var(--dc-dim-text) !important;
-        text-decoration: none !important;
-        font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
-        font-size: 14px !important;
-        font-weight: 600 !important;
-        padding: 8px 16px !important;
-        border-radius: 6px !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-        height: 36px !important;
-        background: transparent !important;
-        transition: all 0.15s ease !important;
-        cursor: pointer;
-    }
-    .dc-btn-arrow {
-        font-size: 8px !important;
-        margin-left: 6px !important;
-        opacity: 0.5 !important;
-        transition: transform 0.15s !important;
-    }
-
-    .dc-menu-btn:hover {
-        color: var(--dc-bright-text) !important;
-        background-color: rgba(255, 255, 255, 0.05) !important;
-    }
-
-    .dc-accent-btn {
-        background-color: rgba(229, 9, 20, 0.1) !important;
-        color: var(--dc-red) !important;
-        border: 1px solid rgba(229, 9, 20, 0.2) !important;
-    }
-    .dc-accent-btn:hover {
-        background-color: var(--dc-red) !important;
-        color: #ffffff !important;
-    }
-
-    .dc-expansion-box {
-        display: none !important;
-        position: absolute !important;
-        top: 100% !important;
-        left: 0 !important;
-        background-color: var(--dc-box-bg) !important;
-        border: 1px solid var(--dc-line-border) !important;
-        border-radius: 6px !important;
-        min-width: 270px !important;
-        padding: 6px !important;
-        margin-top: 5px !important;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.5) !important;
-        z-index: 999999999 !important;
-    }
-    .dc-expansion-box a {
-        color: var(--dc-dim-text) !important;
-        text-decoration: none !important;
-        font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
-        font-size: 13px !important;
-        padding: 8px 12px !important;
-        display: block !important;
-        border-radius: 4px !important;
-        transition: all 0.15s ease !important;
-        white-space: nowrap !important;
-    }
-    .dc-expansion-box a:hover {
-        background-color: rgba(255, 255, 255, 0.05) !important;
-        color: var(--dc-bright-text) !important;
-        padding-left: 15px !important;
-    }
-
-    .dc-show-box { display: block !important; }
-    
-    .dc-btn-active {
-        color: var(--dc-bright-text) !important;
-        background-color: rgba(255, 255, 255, 0.05) !important;
-    }
-    .dc-btn-active .dc-btn-arrow {
-        transform: rotate(180deg) !important;
-        color: var(--dc-red) !important;
-        opacity: 1 !important;
-    }
-
-    .dc-mobile-toggle { display: none; }
-
-    /* Responsive Mobile UI Framework Engine */
-    @media (max-width: 768px) {
-        .dc-mobile-toggle {
-            display: flex !important;
-            flex-direction: column !important;
-            gap: 4px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 4px;
-        }
-        .dc-mobile-toggle .dc-bar {
-            width: 20px;
-            height: 2px;
-            background-color: var(--dc-bright-text);
-            border-radius: 2px;
-        }
-
-        .dc-menu-grid {
-            display: none !important;
-            flex-direction: column !important;
-            position: absolute !important;
-            top: 100% !important;
-            left: 0 !important;
-            width: 100% !important;
-            background-color: var(--dc-dark-bg) !important;
-            border-top: 1px solid var(--dc-line-border) !important;
-            padding: 10px 20px !important;
-            gap: 5px !important;
-        }
-        
-        .dc-menu-grid.dc-mobile-show {
-            display: flex !important;
-        }
-
-        .dc-menu-btn {
-            width: 100% !important;
-            justify-content: space-between !important;
-        }
-
-        .dc-expansion-box {
-            position: static !important;
-            box-shadow: none !important;
-            width: 100% !important;
-            margin-top: 0 !important;
-            background-color: transparent !important;
-            border: none !important;
-            padding-left: 15px !important;
-        }
-    }
-</style>]]></b:widget-setting>
-              </b:widget-settings>
-              <b:includable id='main'>
-  <!-- only display title if it's non-empty -->
-  <b:if cond='data:title != &quot;&quot;'>
-    <h2 class='title'><data:title/></h2>
-  </b:if>
-  <div class='widget-content'>
-    <data:content/>
-  </div>
-
-  <b:include name='quickedit'/>
-</b:includable>
-            </b:widget>
           </b:section>
         </div>
         </div>
@@ -2182,7 +1822,7 @@ head.appendChild(script);
         <div class='column-left-inner'>
           <aside>
           <macro:include id='main-column-left-sections' name='sections'>
-            <macro:param default='0' name='num' value='0'/>
+            <macro:param default='0' name='num' value='1'/>
             <macro:param default='sidebar-left' name='idPrefix'/>
             <macro:param default='sidebar' name='class'/>
             <macro:param default='true' name='includeBottom'/>
@@ -2195,7 +1835,7 @@ head.appendChild(script);
         <div class='column-right-inner'>
           <aside>
           <macro:include id='main-column-right-sections' name='sections'>
-            <macro:param default='2' name='num' value='0'/>
+            <macro:param default='2' name='num' value='1'/>
             <macro:param default='sidebar-right' name='idPrefix'/>
             <macro:param default='sidebar' name='class'/>
             <macro:param default='true' name='includeBottom'/>
@@ -2238,7 +1878,7 @@ head.appendChild(script);
       <b:section class='foot' id='footer-3' name='Footer' showaddelement='no'>
         <b:widget id='Attribution1' locked='true' title='' type='Attribution'>
           <b:widget-settings>
-            <b:widget-setting name='copyright'>Copyright &#169; 2026 Dagon Entertainment Channel, All Rights Reserved</b:widget-setting>
+            <b:widget-setting name='copyright'/>
           </b:widget-settings>
           <b:includable id='main'>
     <div class='widget-content' style='text-align: center;'>
@@ -2249,6 +1889,48 @@ head.appendChild(script);
 
     <b:include name='quickedit'/>
   </b:includable>
+        </b:widget>
+        <b:widget id='Image1' locked='false' title='' type='Image'>
+          <b:widget-settings>
+            <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEiYrf7bGM47geg5sYjcnMhmuMXi1VzhcMHKgm2454Q7M5h-jkNBKC22pNpDyedjK7gc1JAJxzYOg2ZecGSu5BNp_OLaX8RP8Pak7phhdvptFjm3csNjRESLB5bQx5nFEVPRyfhEk1L-luFXa_d6rBwgai0ifCD5KTOsVk9DdobdwycyqBVlNZN7bV7dojI=s135</b:widget-setting>
+            <b:widget-setting name='displayHeight'>127</b:widget-setting>
+            <b:widget-setting name='sectionWidth'>997</b:widget-setting>
+            <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+            <b:widget-setting name='displayWidth'>135</b:widget-setting>
+            <b:widget-setting name='link'>https://worldwidemyanmaragency.blogspot.com/</b:widget-setting>
+            <b:widget-setting name='caption'> </b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+    <b:if cond='data:title != &quot;&quot;'>
+      <h2><data:title/></h2>
+    </b:if>
+    <div class='widget-content'>
+      <b:tag cond='data:link' expr:href='data:link' name='a'>
+        <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'/>
+      </b:tag>
+      <br/>
+      <b:if cond='data:caption'>
+        <span class='caption'><data:caption/></span>
+      </b:if>
+    </div>
+    <b:include name='quickedit'/>
+  </b:includable>
+        </b:widget>
+        <b:widget id='Text1' locked='false' title='Copyright © 2025 [WMA]' type='Text'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>Worldwide Myanmar Agency. All Rights Reserved (TM)</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
         </b:widget>
       </b:section>
     </div>
@@ -2316,4 +1998,299 @@ head.appendChild(script);
   </macro:if>
 </macro:includable>
 
-<b:section-contents id='footer-1'/></html>
+<b:section-contents id='sidebar-left-1'>
+  <b:widget id='Image2' locked='false' title='' type='Image'>
+    <b:widget-settings>
+      <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEjYceXwTXCvFL_DiqKCJNUO8oMocg6haf7vdP9oai2N4WIkC7WZkChyL6IadKblickF1zhSjeGh8Tw_cYibYB94v0A9aqa6Tkt5qGT_TY1fwsKQl75ecWFKIzg7yD7zuumucTyJdn6snvkDdUfhXan8ZzFfQrQi0wYe2MvJ7LbGhifAaqTzTG8TYZDu3js=s116</b:widget-setting>
+      <b:widget-setting name='displayHeight'>109</b:widget-setting>
+      <b:widget-setting name='sectionWidth'>116</b:widget-setting>
+      <b:widget-setting name='shrinkToFit'>true</b:widget-setting>
+      <b:widget-setting name='displayWidth'>116</b:widget-setting>
+      <b:widget-setting name='link'>https://worldwidemyanmaragency.blogspot.com/</b:widget-setting>
+      <b:widget-setting name='caption'/>
+    </b:widget-settings>
+    <b:includable id='main'>
+    <b:if cond='data:title != &quot;&quot;'>
+      <h2><data:title/></h2>
+    </b:if>
+    <div class='widget-content'>
+      <b:tag cond='data:link' expr:href='data:link' name='a'>
+        <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'/>
+      </b:tag>
+      <br/>
+      <b:if cond='data:caption'>
+        <span class='caption'><data:caption/></span>
+      </b:if>
+    </div>
+    <b:include name='quickedit'/>
+  </b:includable>
+  </b:widget>
+  <b:widget id='Label1' locked='false' title='Categories' type='Label'>
+    <b:widget-settings>
+      <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+      <b:widget-setting name='display'>LIST</b:widget-setting>
+      <b:widget-setting name='selectedLabelsList'>Announcement,Dhamma,For Lease,For Sale,Korea Drama,TV Series</b:widget-setting>
+      <b:widget-setting name='showType'>USER_SELECTED</b:widget-setting>
+      <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2><data:title/></h2>
+  </b:if>
+  <div expr:class='&quot;widget-content &quot; + data:display + &quot;-label-widget-content&quot;'>
+    <b:if cond='data:display == &quot;list&quot;'>
+      <ul>
+        <b:loop values='data:labels' var='label'>
+          <li>
+            <b:if cond='data:blog.url == data:label.url'>
+              <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+            <b:else/>
+              <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+            </b:if>
+            <b:if cond='data:showFreqNumbers'>
+              <span dir='ltr'>(<data:label.count/>)</span>
+            </b:if>
+          </li>
+        </b:loop>
+      </ul>
+    <b:else/>
+      <b:loop values='data:labels' var='label'>
+        <span expr:class='&quot;label-size label-size-&quot; + data:label.cssSize'>
+          <b:if cond='data:blog.url == data:label.url'>
+            <span expr:dir='data:blog.languageDirection'><data:label.name/></span>
+          <b:else/>
+            <a expr:dir='data:blog.languageDirection' expr:href='data:label.url'><data:label.name/></a>
+          </b:if>
+          <b:if cond='data:showFreqNumbers'>
+            <span class='label-count' dir='ltr'>(<data:label.count/>)</span>
+          </b:if>
+        </span>
+      </b:loop>
+    </b:if>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+  </b:widget>
+  <b:widget id='BlogArchive1' locked='false' title='Archive' type='BlogArchive'>
+    <b:widget-settings>
+      <b:widget-setting name='showStyle'>FLAT</b:widget-setting>
+      <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
+      <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
+      <b:widget-setting name='monthPattern'>MMMM yyyy</b:widget-setting>
+      <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
+      <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
+      <b:widget-setting name='chronological'>false</b:widget-setting>
+      <b:widget-setting name='showPosts'>false</b:widget-setting>
+      <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+  <div id='ArchiveList'>
+  <div expr:id='data:widget.instanceId + &quot;_ArchiveList&quot;'>
+    <b:include cond='data:style == &quot;HIERARCHY&quot;' data='data' name='interval'/>
+    <b:include cond='data:style == &quot;FLAT&quot;' data='data' name='flat'/>
+    <b:include cond='data:style == &quot;MENU&quot;' data='data' name='menu'/>
+  </div>
+  </div>
+  <b:include name='quickedit'/>
+  </div>
+</b:includable>
+    <b:includable id='flat' var='data'>
+  <ul class='flat'>
+    <b:loop values='data:data' var='i'>
+      <li class='archivedate'>
+        <a expr:href='data:i.url'><data:i.name/></a> (<data:i.post-count/>)
+      </li>
+    </b:loop>
+  </ul>
+</b:includable>
+    <b:includable id='interval' var='intervalData'>
+  <b:loop values='data:intervalData' var='interval'>
+    <ul class='hierarchy'>
+      <li expr:class='&quot;archivedate &quot; + data:interval.expclass'>
+        <b:include cond='data:interval.toggleId' data='interval' name='toggle'/>
+        <a class='post-count-link' expr:href='data:interval.url'>
+          <data:interval.name/>
+        </a>
+        <span class='post-count' dir='ltr'>(<data:interval.post-count/>)</span>
+        <b:include cond='data:interval.data' data='interval.data' name='interval'/>
+        <b:include cond='data:interval.posts' data='interval.posts' name='posts'/>
+      </li>
+    </ul>
+  </b:loop>
+</b:includable>
+    <b:includable id='menu' var='data'>
+  <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
+    <option value=''><data:title/></option>
+    <b:loop values='data:data' var='i'>
+      <option expr:value='data:i.url'><data:i.name/> (<data:i.post-count/>)</option>
+    </b:loop>
+  </select>
+</b:includable>
+    <b:includable id='posts' var='posts'>
+  <ul class='posts'>
+    <b:loop values='data:posts' var='post'>
+      <li><a expr:href='data:post.url'><data:post.title/></a></li>
+    </b:loop>
+  </ul>
+</b:includable>
+    <b:includable id='toggle' var='interval'>
+  <a class='toggle' href='javascript:void(0)'>
+    <span expr:class='&quot;zippy&quot; + (data:interval.expclass == &quot;expanded&quot; ? &quot; toggle-open&quot; : &quot;&quot;)'>
+      <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
+        &#9660;&#160;
+      <b:elseif cond='data:blog.languageDirection == &quot;rtl&quot;'/>
+        &#9668;&#160;
+      <b:else/>
+        &#9658;&#160;
+      </b:if>
+    </span>
+  </a>
+</b:includable>
+  </b:widget>
+  <b:widget id='AdSense1' locked='false' title='' type='AdSense'>
+    <b:includable id='main'>
+  <div class='widget-content'>
+    <data:adCode/>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+  </b:widget>
+  <b:widget id='AdSense2' locked='false' title='' type='AdSense'>
+    <b:includable id='main'>
+  <div class='widget-content'>
+    <data:adCode/>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+  </b:widget>
+</b:section-contents><b:section-contents id='sidebar-right-1'>
+  <b:widget id='Image3' locked='false' title='' type='Image'>
+    <b:widget-settings>
+      <b:widget-setting name='displayUrl'>https://blogger.googleusercontent.com/img/a/AVvXsEg62EQjnEJu_cTsu_68U46PErZcGwoNkazEPjTo2ftkhw0zH8Z1twianrS8OrWViWCBgNvp2h9--g_CiXJJG68ARAk5Xr2s_aK1WugQUfPlpWYiy2rBkwDkk7mV8pz_ab5K5g7k-2vnLEK9Cjk0KIN3ikbdunqBKe3ltRa95ODF2Z_ZxLSwuv1SH5Nltq8=s590</b:widget-setting>
+      <b:widget-setting name='displayHeight'>332</b:widget-setting>
+      <b:widget-setting name='sectionWidth'>590</b:widget-setting>
+      <b:widget-setting name='shrinkToFit'>true</b:widget-setting>
+      <b:widget-setting name='displayWidth'>590</b:widget-setting>
+      <b:widget-setting name='link'>https://cms-image-bucket-productionv3-ap-northeast-1-a7d2.s3.ap-northeast-1.amazonaws.com/images/4/3/4/3/46253434-1-eng-GB/photo_SXM2023071800011607.jpg</b:widget-setting>
+      <b:widget-setting name='caption'/>
+    </b:widget-settings>
+    <b:includable id='main'>
+    <b:if cond='data:title != &quot;&quot;'>
+      <h2><data:title/></h2>
+    </b:if>
+    <div class='widget-content'>
+      <b:tag cond='data:link' expr:href='data:link' name='a'>
+        <img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl' expr:width='data:width'/>
+      </b:tag>
+      <br/>
+      <b:if cond='data:caption'>
+        <span class='caption'><data:caption/></span>
+      </b:if>
+    </div>
+    <b:include name='quickedit'/>
+  </b:includable>
+  </b:widget>
+  <b:widget id='BlogSearch1' locked='false' title='Find The Post' type='BlogSearch'>
+    <b:includable id='main'>
+    <!-- only display title if it's non-empty -->
+    <b:if cond='data:title != &quot;&quot;'>
+      <h2 class='title'><data:title/></h2>
+    </b:if>
+
+    <div class='widget-content'>
+      <div expr:id='data:widget.instanceId + &quot;_form&quot;'>
+        <form class='gsc-search-box' expr:action='data:blog.searchUrl'>
+          <b:attr cond='not data:view.isPreview' name='target' value='_top'/>
+          <table cellpadding='0' cellspacing='0' class='gsc-search-box'>
+            <tbody>
+              <tr>
+                <td class='gsc-input'>
+                  <input autocomplete='off' class='gsc-input' expr:value='data:view.isSearch ? data:view.search.query.escaped : &quot;&quot;' name='q' size='10' title='search' type='text'/>
+                </td>
+                <td class='gsc-search-button'>
+                  <input class='gsc-search-button' expr:value='data:messages.search' title='search' type='submit'/>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+    </div>
+
+    <b:include name='quickedit'/>
+  </b:includable>
+  </b:widget>
+  <b:widget id='Feed1' locked='false' title='NY Times World News' type='Feed'>
+    <b:widget-settings>
+      <b:widget-setting name='feedUrl'>https://rss.nytimes.com/services/xml/rss/nyt/World.xml</b:widget-setting>
+      <b:widget-setting name='openLinksInNewWindow'>false</b:widget-setting>
+      <b:widget-setting name='numItemsShow'>5</b:widget-setting>
+      <b:widget-setting name='showItemDate'>false</b:widget-setting>
+      <b:widget-setting name='showItemAuthor'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+    <h2><data:title/></h2>
+    <div class='widget-content' expr:id='data:widget.instanceId + &quot;_feedItemListDisplay&quot;'>
+      <span style='filter: alpha(25); opacity: 0.25;'>
+        <a expr:href='data:feedUrl'><data:loadingMsg/></a>
+      </span>
+    </div>
+    <b:include name='quickedit'/>
+  </b:includable>
+  </b:widget>
+  <b:widget id='Feed2' locked='false' title='BBC Burmese သတင်းများ' type='Feed'>
+    <b:widget-settings>
+      <b:widget-setting name='feedUrl'>http://www.bbc.co.uk/burmese/index.xml</b:widget-setting>
+      <b:widget-setting name='openLinksInNewWindow'>false</b:widget-setting>
+      <b:widget-setting name='numItemsShow'>5</b:widget-setting>
+      <b:widget-setting name='showItemDate'>false</b:widget-setting>
+      <b:widget-setting name='showItemAuthor'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+    <h2><data:title/></h2>
+    <div class='widget-content' expr:id='data:widget.instanceId + &quot;_feedItemListDisplay&quot;'>
+      <span style='filter: alpha(25); opacity: 0.25;'>
+        <a expr:href='data:feedUrl'><data:loadingMsg/></a>
+      </span>
+    </div>
+    <b:include name='quickedit'/>
+  </b:includable>
+  </b:widget>
+  <b:widget id='ContactForm1' locked='false' title='Contact Us' type='ContactForm'>
+    <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='contact-form-widget'>
+    <div class='form'>
+      <form name='contact-form'>
+        <p/>
+        <data:contactFormNameMsg/>
+        <br/>
+        <input class='contact-form-name' expr:id='data:widget.instanceId + &quot;_contact-form-name&quot;' name='name' size='30' type='text' value=''/>
+        <p/>
+        <data:contactFormEmailMsg/> <span style='font-weight: bolder;'>*</span>
+        <br/>
+        <input class='contact-form-email' expr:id='data:widget.instanceId + &quot;_contact-form-email&quot;' name='email' size='30' type='text' value=''/>
+        <p/>
+        <data:contactFormMessageMsg/> <span style='font-weight: bolder;'>*</span>
+        <br/>
+        <textarea class='contact-form-email-message' cols='25' expr:id='data:widget.instanceId + &quot;_contact-form-email-message&quot;' name='email-message' rows='5'/>
+        <p/>
+        <input class='contact-form-button contact-form-button-submit' expr:id='data:widget.instanceId + &quot;_contact-form-submit&quot;' expr:value='data:contactFormSendMsg' type='button'/>
+        <p/>
+        <div style='text-align: center; max-width: 222px; width: 100%'>
+          <p class='contact-form-error-message' expr:id='data:widget.instanceId + &quot;_contact-form-error-message&quot;'/>
+          <p class='contact-form-success-message' expr:id='data:widget.instanceId + &quot;_contact-form-success-message&quot;'/>
+        </div>
+      </form>
+    </div>
+  </div>
+  <b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+</b:section-contents><b:section-contents id='footer-1'/></html>
